@@ -6,6 +6,7 @@ node_modules/
 
 data/
 
+!.env.example
 .env*
 
 .DS_Store
