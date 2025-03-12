@@ -1,0 +1,10 @@
+name: data-battle-services
+
+services:
+  ui:
+    container_name: ui
+    build: ./services/ui
+
+  server:
+    container_name: server
+    build: ./services/ui
