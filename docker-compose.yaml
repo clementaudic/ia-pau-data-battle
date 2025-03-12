@@ -4,7 +4,34 @@ services:
   ui:
     container_name: ui
     build: ./services/ui
+  #  depends_on:
+  #    - server
 
-  server:
-    container_name: server
-    build: ./services/ui
+  # server:
+  #   container_name: server
+  #   build: ./services/server
+  #   depends_on:
+  #     - database
+
+  database:
+    image: postgres:17
+    container_name: database
+    restart: always
+    hostname: postgres
+    user: ${DATABASE_USER}
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - '5432:5432'
+    volumes:
+      - data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ 'CMD-SHELL', 'pg_isready', '-U', '${DATABASE_USER}', '-d', '${DATABASE_NAME}' ]
+      interval: 10s
+      retries: 5
+
+volumes:
+  data:
+    name: data
