@@ -12,3 +12,8 @@ data/
 services/
 ...
 ```
+
+
+Exécution du projet : 
+	chmod +x run.sh
+	./run.sh
