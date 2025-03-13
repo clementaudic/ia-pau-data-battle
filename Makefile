@@ -11,6 +11,8 @@ VENV_EXISTS = [ -d $(VENV) ]
 
 .PHONY: setup-backend setup-frontend install run-backend run-frontend run clean update
 
+all: install run
+
 ## 📍 1. Installer le backend (Flask)
 setup-backend:
 	@echo "🔧 Création et activation de l'environnement virtuel..."
@@ -23,7 +25,7 @@ setup-backend:
 ## 📍 2. Installer le frontend (Next.js)
 setup-frontend:
 	@echo "📦 Installation des dépendances frontend..."
-	cd $(FRONTEND_DIR) && npm install
+	cd $(FRONTEND_DIR) && yarn install
 	@echo "✅ Frontend installé !"
 
 ## 📍 3. Installation complète
@@ -38,10 +40,10 @@ run-backend:
 ## 📍 5. Lancer le frontend (Next.js)
 run-frontend:
 	@echo "🚀 Démarrage du frontend Next.js sur le port $(PORT_FRONTEND)..."
-	cd $(FRONTEND_DIR) && npm run dev
+	cd $(FRONTEND_DIR) && yarn dev
 
 ## 📍 6. Lancer toute l'application (backend + frontend)
-run: 
+run:
 	@echo "🚀 Démarrage complet de l'application..."
 	make -j2 run-backend run-frontend
 
@@ -50,10 +52,3 @@ clean:
 	@echo "🧹 Nettoyage des fichiers temporaires..."
 	rm -rf $(VENV) $(FRONTEND_DIR)/node_modules $(FRONTEND_DIR)/.next
 	@echo "✅ Nettoyage terminé !"
-
-## 📍 8. Mise à jour des dépendances
-update:
-	@echo "🔄 Mise à jour des dépendances..."
-	. $(VENV)/bin/activate && pip install --upgrade -r $(BACKEND_DIR)/requirements.txt
-	cd $(FRONTEND_DIR) && npm update
-	@echo "✅ Mise à jour terminée !"
