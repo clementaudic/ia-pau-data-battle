@@ -11,7 +11,17 @@ services:
   #   container_name: server
   #   build: ./services/server
   #   depends_on:
+  #     - llm
   #     - database
+
+  llm:
+    image: ollama/ollama:latest
+    container_name: llm
+    restart: always
+    ports:
+      - '11434:11434'
+    volumes:
+      - llm-storage:/root/.ollama
 
   database:
     image: pgvector/pgvector:pg17
@@ -26,12 +36,14 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - data:/var/lib/postgresql/data
+      - database-storage:/var/lib/postgresql/data
     healthcheck:
       test: [ 'CMD-SHELL', 'pg_isready', '-U', '${DATABASE_USER}', '-d', '${DATABASE_NAME}' ]
       interval: 10s
       retries: 5
 
 volumes:
-  data:
-    name: data
+  database-storage:
+    name: database-storage
+  llm-storage:
+    name: llm-storage
