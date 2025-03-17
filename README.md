@@ -1,6 +1,26 @@
 # ia-pau-data-battle
 
 
+
+# Run
+
+To run a specific service:
+
+```shell
+docker compose up -d <service_name>
+
+# Exemple: docker compose up -d database
+#          docker compose up -d llm
+```
+
+To stop the service:
+
+```shell
+docker compose down <service_name>
+
+# Exemple: docker compose down database
+```
+
 Every PDFs in
 
 ```
