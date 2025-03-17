@@ -14,7 +14,7 @@ services:
   #     - database
 
   database:
-    image: postgres:17
+    image: pgvector/pgvector:pg17
     container_name: database
     restart: always
     hostname: postgres
