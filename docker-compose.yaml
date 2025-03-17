@@ -1,9 +1,9 @@
 name: data-battle-services
 
 services:
-  ui:
-    container_name: ui
-    build: ./services/ui
+  #  ui:
+  #    container_name: ui
+  #    build: ./services/ui
   #  depends_on:
   #    - server
 
