@@ -20,4 +20,6 @@ COPY --from=build /app /app
 
 WORKDIR /app
 
+RUN prisma generate --schema=libs/database/schema.prisma
+
 ENTRYPOINT ["python3", "app.py"]

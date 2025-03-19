@@ -1,5 +1,3 @@
-from os import system
-
 from flask import Flask
 from flask_cors import CORS
 
@@ -20,5 +18,4 @@ app.register_blueprint(auth_blueprint)
 register_error_handlers(app)
 
 if __name__ == "__main__":
-    system("prisma generate --schema=libs/database/schema.prisma")
     app.run(debug=EnvConfig.DEBUG, port=5000, threaded=True)
