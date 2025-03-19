@@ -17,8 +17,11 @@ install: clean
 	@echo "📦 Installation des dépendances..."
 	. $(VENV)/bin/activate
 	pip install -r requirements.txt
-	prisma db push --schema=libs/database/schema.prisma
+	make db
 	@echo "✅ Backend installé !"
+
+db:
+	prisma db push --schema=libs/database/schema.prisma
 
 ## 📍 4. Lancer le backend (Flask)
 run:
