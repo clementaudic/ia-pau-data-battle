@@ -29,7 +29,11 @@ def register():
     password = generate_password_hash(data.get('password'))
 
     existing_user = database.user.find_unique(where={"email": email})
-    if existing_user:
+
+    if not first_name or not last_name or not email or not password:
+        return jsonify({"error": "Tous les champs sont obligatoires"}), 400
+
+    elif existing_user:
         return jsonify({"error": "Cet email est déjà utilisé"}), 400
 
     user = database.user.create(
