@@ -6,7 +6,7 @@ from werkzeug.exceptions import HTTPException
 from utils.api_exception import ApiException
 
 
-def handle_api_error(exception: ApiException):
+def handle_api_exception(exception: ApiException):
     response = Response()
     response.status_code = exception.code
     error = {

@@ -1,40 +1,47 @@
-from flask import Blueprint, Flask, request, render_template, redirect, url_for, jsonify
-from prisma import Prisma
+from flask import Blueprint, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from libs.database import database
+from utils.api_exception import ApiException
+from utils.body_parser import parse_request_body
 
-auth_blueprint = Blueprint('auth', __name__, url_prefix='/auth')
+auth_blueprint = Blueprint("auth", __name__, url_prefix="/auth")
 
-# Authentification
-@auth_blueprint.route('/login', methods=['POST'])
+@auth_blueprint.route("/login", methods=["POST"])
 def login():
-    data = request.json
-    email = data.get('email')
-    password = data.get('password')
+    data = parse_request_body(request, [
+        {"name": "email", "key": "email", "type": str, "required": True},
+        {"name": "password", "key": "password", "type": str, "required": True}
+    ])
+
+    email = data.get("email")
+    password = data.get("password")
 
     user = database.user.find_unique(where={"email": email})
 
     if not user or not check_password_hash(user.password, password):
-        return jsonify({"error": "Identifiants invalides"}), 401
+        raise ApiException(code=401, message="Wrong credentials")
 
-    return jsonify({"message": "Connexion réussie", "userId": user.id})
+    return jsonify({"userId": user.id})
 
-# Registration
-@auth_blueprint.route('/register', methods=['POST'])
+
+@auth_blueprint.route("/register", methods=["POST"])
 def register():
-    data = request.json
-    first_name = data.get('firstName')
-    last_name = data.get('lastName')
-    email = data.get('email')
-    password = generate_password_hash(data.get('password'))
+    data = parse_request_body(request, [
+        {"name": "firstName", "key": "firstName", "type": str, "required": True},
+        {"name": "lastName", "key": "lastName", "type": str, "required": True},
+        {"name": "email", "key": "email", "type": str, "required": True},
+        {"name": "password", "key": "password", "type": str, "required": True}
+    ])
+
+    first_name = data.get("firstName")
+    last_name = data.get("lastName")
+    email = data.get("email")
+    password = generate_password_hash(data.get("password"))
 
     existing_user = database.user.find_unique(where={"email": email})
 
-    if not first_name or not last_name or not email or not password:
-        return jsonify({"error": "Tous les champs sont obligatoires"}), 400
-
-    elif existing_user:
-        return jsonify({"error": "Cet email est déjà utilisé"}), 400
+    if existing_user:
+        raise ApiException(code=409, message="User with this email already exists")
 
     user = database.user.create(
         data={
@@ -45,4 +52,4 @@ def register():
         }
     )
 
-    return jsonify({"message": "Inscription réussie", "userId": user.id})
+    return jsonify({"userId": user.id})
