@@ -4,5 +4,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class EnvConfig:
-    DEBUG: bool = os.environ.get("DEBUG") == "True" or False
     DATABASE_URL: str = os.environ.get("DATABASE_URL")
+    OLLAMA_API_URL: str = os.environ.get("OLLAMA_API_URL")
+    PROCESS_DOCUMENTS: bool = os.environ.get("PROCESS_DOCUMENTS") == "True" or False

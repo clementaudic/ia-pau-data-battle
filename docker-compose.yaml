@@ -11,6 +11,9 @@ services:
     image: data-battle-server
     container_name: data-battle-server
     build: ./services/server
+    restart: always
+    ports:
+      - '5000:5000'
     depends_on:
       database:
         condition: service_healthy

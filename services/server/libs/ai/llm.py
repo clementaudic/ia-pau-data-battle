@@ -1,8 +1,10 @@
 from langchain_ollama import OllamaLLM
 
 from libs.config.ai import AiConfig
+from libs.config.env import EnvConfig
 
 llm = OllamaLLM(
+    base_url=EnvConfig.OLLAMA_API_URL,
     model=AiConfig.LLM_MODEL,
     temperature=AiConfig.LLM_TEMPERATURE,
     top_k=AiConfig.LLM_TOP_K,

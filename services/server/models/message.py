@@ -1,12 +1,13 @@
 from dataclasses import dataclass
 from enum import StrEnum
 
+from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
 from prisma import Json
 
 
 class MessageSender(StrEnum):
-    USER: str
-    AI: str
+    USER: str = "USER"
+    AI: str = "AI"
 
 
 @dataclass(frozen=True)
@@ -43,3 +44,12 @@ class Message:
             "sender": self.sender.value,
             "content": self.content
         })
+
+    def to_lc_message(self) -> BaseMessage:
+        match self.sender:
+            case MessageSender.USER:
+                return HumanMessage(content=self.content)
+            case MessageSender.AI:
+                return AIMessage(content=self.content)
+
+        raise ValueError("Invalid message sender")

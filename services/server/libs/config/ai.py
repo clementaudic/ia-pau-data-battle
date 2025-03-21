@@ -9,6 +9,9 @@ class AiConfig:
         "device": "gpu",
     }
 
+    DOCUMENT_CHUNK_SIZE: int = 1000
+    DOCUMENT_CHUNK_OVERLAP: int = 100
+
     LLM_MODEL: str = "nemotron-mini"
     LLM_TEMPERATURE: float = 0.25
     LLM_TOP_K: int = 10

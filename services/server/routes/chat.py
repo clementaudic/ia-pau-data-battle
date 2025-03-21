@@ -2,14 +2,13 @@ from flask import Blueprint, request, jsonify, Response
 from prisma.enums import ChatSubject
 from prisma.models import Chat
 
-from libs.ai.chat import answer_question
+from libs.ai.answer import answer_question
 from libs.database import database
 from models.message import Message, MessageSender
 from utils.api_exception import ApiException
 from utils.body_parser import parse_request_body
 
 chat_blueprint = Blueprint("chats", __name__, url_prefix="/chats")
-
 
 @chat_blueprint.route("/", methods=["GET"])
 def get_all_chats() -> Response:
@@ -59,7 +58,7 @@ def ask_question_temporary() -> Response:
     if not answer_result.is_successful or answer_result.answer is None:
         raise ApiException(code=502, message="Failed to answer question")
 
-    return jsonify(answer_result.answer.to_json())
+    return jsonify(answer_result.answer.to_json().data)
 
 
 @chat_blueprint.route("/<chat_id>", methods=["GET"])
@@ -88,7 +87,14 @@ def ask_question(chat_id: str) -> Response:
     if not answer_result.is_successful:
         raise ApiException(code=502, message="Failed to answer question")
 
-    return jsonify(answer_result.answer.to_json())
+    database.chat.update(
+        where={"id": chat.id},
+        data={
+            "messages": chat.messages + [answer_result.answer.to_json()]
+        }
+    )
+
+    return jsonify(answer_result.answer.to_json().data)
 
 
 @chat_blueprint.route("/<chat_id>/clear", methods=["PATCH"])

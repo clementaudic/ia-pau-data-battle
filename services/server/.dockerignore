@@ -1,3 +1,6 @@
 venv
 Makefile
 .env
+Dockerfile
+__pycache__/
+

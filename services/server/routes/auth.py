@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, Response
 from werkzeug.security import generate_password_hash, check_password_hash
 from libs.database import database
 from utils.api_exception import ApiException
@@ -7,7 +7,7 @@ from utils.body_parser import parse_request_body
 auth_blueprint = Blueprint("auth", __name__, url_prefix="/auth")
 
 @auth_blueprint.route("/login", methods=["POST"])
-def login():
+def login() -> Response:
     data = parse_request_body(request, [
         {"name": "email", "key": "email", "type": str, "required": True},
         {"name": "password", "key": "password", "type": str, "required": True}
@@ -25,7 +25,7 @@ def login():
 
 
 @auth_blueprint.route("/register", methods=["POST"])
-def register():
+def register() -> Response:
     data = parse_request_body(request, [
         {"name": "firstName", "key": "firstName", "type": str, "required": True},
         {"name": "lastName", "key": "lastName", "type": str, "required": True},

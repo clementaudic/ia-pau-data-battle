@@ -26,7 +26,7 @@ db:
 ## 📍 4. Lancer le backend (Flask)
 run:
 	@echo "🚀 Démarrage du backend..."
-	python app.py
+	flask --app app.py run --port 5000
 
 ## 📍 7. Nettoyer les fichiers inutiles
 clean:
