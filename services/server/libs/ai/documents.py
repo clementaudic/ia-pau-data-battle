@@ -11,16 +11,7 @@ _text_splitter = RecursiveCharacterTextSplitter(
     chunk_overlap=AiConfig.DOCUMENT_CHUNK_OVERLAP
 )
 
-def _load_documents() -> List[Document]:
+def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
     # TODO: Implement documents loading logic
     return []
 
-
-def embed_documents(retriever: VectorStoreRetriever, collection_name: Literal["eqe", "epac"]) -> None:
-    match collection_name:
-        case "eqe":
-            eqe_documents = _load_documents()
-            retriever.add_documents(eqe_documents)
-        case "epac":
-            epac_documents = _load_documents()
-            retriever.add_documents(epac_documents)

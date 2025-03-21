@@ -23,6 +23,12 @@ install: clean
 db:
 	prisma db push --schema=libs/database/schema.prisma
 
+
+embed:
+	@echo "📦 Embedding documents..."
+	flask embed-documents
+
+
 ## 📍 4. Lancer le backend (Flask)
 run:
 	@echo "🚀 Démarrage du backend..."
