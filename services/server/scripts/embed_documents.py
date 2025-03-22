@@ -19,5 +19,10 @@ def embed_documents() -> None:
 
     for directory, retriever in directory_retriever_coupling:
         documents = load_documents(directory)
+
+        if len(documents) == 0:
+            print(f"No documents found in the '{directory}' directory")
+            continue
+
         retriever.add_documents(documents)
 

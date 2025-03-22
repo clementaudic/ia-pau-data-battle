@@ -1,6 +1,5 @@
 venv
 Makefile
-.env
+.env*
 Dockerfile
 __pycache__/
-
