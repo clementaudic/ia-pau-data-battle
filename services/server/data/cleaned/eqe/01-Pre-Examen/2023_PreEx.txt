@@ -1,0 +1,372 @@
+Question 1:
+You are a professional representative before the EPO. Today, 6 March 2023, you receive an email from your client, Alvar, a national of Finland. He wants you to file a European patent application EP-A in his name, claiming priority from FI-A, a Finnish patent application. FI-A was jointly filed in the name of Alvar and Aino on 4 March 2022. A copy of FI-A is attached to the email. No other document or information is sent with the email.
+For each of the statements 1.1–1.4, indicate on the answer sheet whether the statement is true or false:
+1.1 On the basis of the information given above, you can file a European patent application EP-A in Alvar’s name at the EPO today and it will be accorded 6 March 2023 as the date of filing.
+1.2 You can validly file EP-A in Finnish.
+1.3 On the basis of the information given above, you can be sure that EP-A can validly claim priority from FI-A.
+1.4 Alvar as a natural person is not entitled to a reduction of the filing fee.
+
+Answer 1:
+1.1 FALSE: Since you can comply on 17 March 2023 with the requirements of Rule 40(1)(a), (b) and (c) EPC [i.e. providing an indication that a European patent is sought; providing your own or Alvar’s contact details; and filing the description of FI-A or a reference to it], the date of filing will be 17 March 2023 (Guidelines, A-II 4.1).
+1.2 TRUE: A European patent application may be filed in any language, Article 14(2) EPC.
+1.3 FALSE: For validly claiming the priority, Aino must have transferred the priority right to Alvar (and Alvar must be the successor in title) before the filing date of EP-A, Article 87(1) EPC and Guidelines, A-III, 6.1(ii).
+1.4 FALSE: Being a national of the Contracting State Finland and being a natural person, Alvar is entitled to a reduction of the filing fees, Rule 6(3) and (4)(b) EPC and Article 14(4) EPC.
+
+
+
+Question 2:
+Paula is resident in Romania and has no EPO mailbox for electronic notification. On 13 February 2023, Paula filed the European patent application EP-P as a first filing. The EPO noticed that the drawings mentioned in the description were missing. In a communication dated 22 February 2023, the EPO invited Paula to file the missing drawings.
+For each of the statements 2.1–2.4, indicate on the answer sheet whether the statement is true or false:
+2.1 If applicants are not invited by the EPO to file missing parts of the description or missing drawings, they may validly file them within two months of the date of filing.
+2.2 If Paula ignores the invitation by the EPO to file missing parts of the description or missing drawings, EP-P will be deemed to be withdrawn.
+2.3 If Paula files the missing drawings on 3 May 2023, EP-P will receive 3 May 2023 as its date of filing.
+2.4 Paula may validly file the missing drawings for EP-P on 6 June 2023, provided she pays the fee for further processing.
+
+Answer 2:
+2.1 TRUE: An applicant may file missing parts of the description or missing drawings of his own motion within two months of the date of filing, Rule 56(2) EPC and Guidelines, A-II 5.2.
+2.2 FALSE: If Paula ignores the invitation, then any reference to the drawings will be deemed to be deleted, Rule 56(4)(a) EPC (the legal consequence is not that the application is deemed to be withdrawn).
+2.3 TRUE: If the missing drawings are filed within two months of the notification of that communication [22 February + 10 days (4 March 2023) + 2 months], i.e. 4 May 2023 (Rule 56(1) EPC, Rule 126(2) EPC, Rule 131(4) EPC) the application shall be re-dated to the date on which the missing drawings were filed, Rule 56(2) EPC.
+2.4 FALSE: According to Rule 135(2) EPC, further processing is ruled out in respect of the period under Rule 56(2) EPC.
+
+
+
+Question 3:
+Said intends to file the following patent applications in French language:
+(1) a European patent application EP-S
+(2) an international patent application PCT-SE.
+PCT-SE will be jointly filed in the name of Said and Eric. Eric lives in Paris. Said lives in Lebanon and is of Lebanese nationality. Lebanon is not a PCT member state.
+For each of the statements 3.1–3.4, indicate on the answer sheet whether the statement is true or false:
+3.1 Said can validly file EP-S with the EPO.
+3.2 If, two months after validly filing PCT-SE, Said moves to Paris, the EPO will, upon request, record the change of residence in relation to PCT-SE.
+3.3 PCT-SE can be validly filed with the EPO as receiving Office.
+3.4 PCT-SE can be validly filed with the International Bureau as receiving Office.
+
+Answer 3:
+3.1 TRUE: There are no nationality or residence restrictions for filing a European patent application with the EPO, Articles 58 and 133(2) EPC.
+3.2 FALSE: Only the IB can record the residence change upon the applicant’s request, Rule 92bis.1.(a)(i)PCT.
+3.3 TRUE: The EPO is the receiving Office competent for applicant Eric, who has his residence within one of the Contracting States (France), Article 151 EPC, Rule 157(1) EPC and Rule 19.1(a) PCT. If there are two (or more) applicants, the requirements of Rule 19.1 PCT regarding where to file are satisfied if the international application is filed with the competent receiving office of at least one of the applicants, Rule 19.2(i) PCT.
+3.4 TRUE: A PCT application can be validly filed before the International Bureau (IB) if at least one of the applicants is a resident or national of a PCT Contracting State, Rule 19.1(a)(iii) and Rule 19.2 (ii) PCT.
+
+
+
+Question 4:
+In 2020, company A was interested in exploiting a new medical device it had developed, and, for this purpose, details of the device were disclosed in confidence to company B. Unknown to company A, company B filed a European patent application EP-B with an effective filing date of 6 June 2021. Made aware of the publication of EP-B, company A sought before a national court to be recognised as entitled to the grant of a European patent for the invention disclosed in EP-B. By a final decision of the national court dated 10 January 2023, it has been adjudged that company A is entitled to the grant of a European patent for the invention disclosed in EP-B. This final decision is recognised by all contracting states designated in the application EP-B.
+For each of the statements 4.1–4.4, indicate on the answer sheet whether the statement is true or false:
+4.1 If EP-B is still pending and has not yet been granted, company A may prosecute EP-B as its own application in place of company B.
+4.2 If EP-B is still pending and has not yet been granted, a request that company B must withdraw EP-B, filed by company A at the EPO, will be allowed.
+4.3 If EP-B is still pending and has not yet been granted, company A may validly request that EP-B be refused.
+4.4 If EP-B has been deemed to be withdrawn and is thus no longer pending, company A may still file a new European patent application EP-A in respect of the same invention, wherein EP-A shall be deemed to have been filed on 6 June 2021.
+
+Answer 4:
+4.1 TRUE: Article 61(1)(a), R. 16 EPC, Guidelines C-IX, 2.1(i) and A-IV, 2.1(i).
+4.2 FALSE: No provisions in Article 61(1)(c), Rule 16 EPC or elsewhere in the EPC are provided for the original application to be withdrawn by the unlawful applicant on request of the lawful applicant.
+4.3 TRUE: Article 61(1)(c), R. 16 EPC, Guidelines C-IX, 2.1(iii) and A-IV, 2.1(iii).
+4.4 TRUE: Article 61(1)(b), R. 16 EPC, Guidelines C-IX, 2.2 and A-IV, 2.1(ii), G3/92.
+
+
+
+Question 5:
+On 31 January 2022, Susanne, a German national living in Germany, filed a PCT application PCT-S in German, validly claiming priority from her European patent application EP-S, filed on 29 January 2021 in German. PCT-S contains claim 1 as originally disclosed in EP-S and claim 2 directed to an improved embodiment that was not disclosed in EP-S. PCT-S was published in German on 7 August 2022. Susanne sold PCT-S to Ian, a British national. The international search report issued by the EPO as International Searching Authority states that claim 1 is not novel over the prior art and the subject-matter of claim 2 is novel and involves an inventive step. Ian wants to enter the regional phase before the EPO for PCT-S. Today is 6 March 2023.
+For each of the statements 5.1–5.4, indicate on the answer sheet whether the statement is true or false:
+5.1 When entering the regional phase before the EPO, Ian can file an English translation of PCT-S so that the language of the proceedings of the regional phase of PCT-S will be English.
+5.2 The time limit for entering the regional phase before the EPO for PCT-S claiming priority from EP-S ends on 31 July 2023.
+5.3 Today, 6 March 2023, Ian can withdraw the priority claim of PCT-S in the international phase so that the time limit for entering the regional phase before the EPO for PCT-S expires on 2 September 2024.
+5.4 Withdrawing the priority claim of EP-S will affect the effective date of claim 2.
+
+Answer 5:
+5.1 FALSE: If an international patent application has been filed and published under the PCT in an official language of the EPO, it is not possible, on entry into the European phase, to file a translation of the application into another EPO official language (G 4/08).
+5.2 FALSE: Calculating 31 months from priority date, the time limit for entering the regional phase before the EPO for PCT-S ends on 29 August 2023 (Rule 159(1) EPC).
+5.3 TRUE: The priority claim of PCT-S can be withdrawn in the international phase until 29 January 2021 + 30 months (Rule 90bis.3 PCT) -> 29 July 2023 (Saturday) -> 31 July 2023. The time limit for entry into EP-phase becomes 31 January 2022 + 31 months (Rule 159(1) EPC) -> 31 August 2024 (Saturday) -> 2 September 2024.
+5.4 FALSE: Claim 2 was not disclosed in EP-S, the priority is not valid for this claim, and the effective date of this claim is the filing date of PCT-S (Article 88(3) EPC).
+
+
+
+Question 6:
+European patent application EP-P was filed as a first filing on 2 December 2019 and was published on 13 June 2021. On 28 November 2021, you received the first communication from the examining division under Article 94(3) EPC regarding EP-P. European patent application EP-D was filed with the EPO on 8 December 2022 as a divisional application of EP-P. Today, 6 March 2023, EP-P is still pending. Some of the claims of EP-D contain subject-matter that was not originally disclosed in EP-P. The renewal fees for EP-D have not yet been paid.
+For each of the statements 6.1–6.4, indicate on the answer sheet whether the statement is true or false:
+6.1 An EP divisional application cannot be validly filed after 24 months from the issuance of the first communication under Article 94(3) EPC in respect of EP-P and therefore EP-D was not validly filed as a divisional application.
+6.2 The renewal fee, already fallen due, may be validly paid for EP-D on 11 April 2023 without an additional fee.
+6.3 At present, EP-D is deemed to have 8 December 2022 as its date of filing.
+6.4 In the present case EP-P will be regarded as prior art under Article 54(2) EPC against EP-D.
+
+Answer 6:
+6.1 FALSE: The European divisional application EP-D can be validly filed as long as the earlier application (in this case EP-P) is pending, Rule 36(1) EPC as entered into force on 01.04.2014. (Since this change, Rule 36(1)(a) EPC as entered into force on 26 October 2010 is not applicable anymore).
+6.2 TRUE: The first to fourth renewal fee was due in respect of EP-P when EP-D was filed, the 5th renewal fee was not due when EP-D was filed. This 5th renewal fee for EP-P became due on 31 December 2022. Renewal fees already due in respect of EP-P at the date of filing EP-D shall be also paid for EP-D and shall be due on its filing. These fees and any renewal fee due within four months of filing EP-D can be paid within four months from filing without an additional fee, i.e. on 11 April 2023 [8 December 2022 + 4 months (= 8 April 2023), extended to Tuesday 11 April 2023], Rule 51(3) EPC, Rule 131(4) EPC and Rule 134(1) EPC).
+6.3 FALSE: Even if EP-D contains subject-matter extending beyond the content of the earlier application as originally filed, it cannot be converted into an independent application taking 8 December 2022 as its date of filing (Article 76(1) EPC, Guidelines C-IX, 1.4 or G1/05, Reasons 11.1).
+6.4 FALSE: EP-P cannot be prior art for EP-D, because EP-D cannot be converted into an independent application and has the same filing date or priority of EP-P with respect to the same subject-matter of EP-P (Article 76(1) EPC, Guidelines C-IX, 1.4 or G1/05, Reasons 11.1).
+
+
+
+Question 7:
+A company having its principal place of business in France files an international patent application at the French national patent office. The language of this international patent application is English. As a receiving Office, the French national patent office accepts international patent applications filed in French only. The International Searching Authority for this international patent application is the European Patent Office, which accepts the following languages for international search: English, French and German.
+For each of the statements 7.1–7.4, indicate on the answer sheet whether the statement is true or false:
+7.1 The international patent application will be transmitted to the International Bureau.
+7.2 The international patent application will be considered to have been received by the French national patent office on behalf of the International Bureau as receiving Office.
+7.3 The search fee is collected by the International Searching Authority for its own benefit.
+7.4 A translation is required by the European Patent Office for the international search.
+
+Answer 7:
+7.1 TRUE: The international patent application is not in a language accepted by the French national patent office, therefore the French national patent office will transmit the international patent application to the International Bureau (Rule 19.4 (b) PCT).
+7.2 TRUE: Rule 19.4 (a)(ii) PCT.
+7.3 FALSE: The search fee is collected by the receiving Office (Rule 16.1 (b) PCT).
+7.4 FALSE: No translation is required since English is a language accepted by the EPO for international search (Rule 12.3 (a) PCT, Euro-PCT Guide 3.1.015).
+
+
+
+Question 8:
+A European patent application, EP-A, was filed in English on 2 September 2021 claiming priority from a Swedish national patent application, SE-A, which was filed on 2 September 2020. EP-A was published on 9 March 2022. EP-A is pending.
+For each of the statements 8.1–8.4, indicate on the answer sheet whether the statement is true or false:
+8.1 The European examination proceedings are in progress. Third-party observations written in English are filed today and explain why a scientific journal article published in Swedish on 10 August 2020 is novelty-destroying for the claimed subject-matter of EP-A. The third-party observations are filed anonymously at the European Patent Office, together with a copy of the Swedish publication. In view of this, the third-party observations are validly filed.
+8.2 Third-party observations must cite prior art documents.
+8.3 The decision to grant a patent based on EP-A has already been sent to the applicant. Third-party observations are received by the EPO just before the publication of the mention of the grant. They cite a new document destroying the novelty of the allowed claims. In view of this, the examining division will consider them and resume the examination proceedings.
+8.4 A patent based on EP-A has been granted. The mention of the grant was published on 1 March 2023. Third-party observations are validly filed today. In view of this, the person filing the third-party observations will be a party to the opposition proceedings if opposition proceedings start.
+
+Answer 8:
+8.1 TRUE: The third-party observations may be anonymous. Any person may present observations concerning the patentability of the invention including the novelty. The observations are filed in writing in English which is one of the EPO’s official languages. (Art. 115 EPC, Guidelines A-VII,3.5 and E-VI,3). Publications submitted in support of the arguments may be filed in any language (Rule 114(1) EPC, Rule 3(3) EPC, Guidelines E-VI,3).
+8.2 FALSE: Third-party observations may be directed to any observations concerning the patentability of the invention (Article 115 EPC, Guidelines E-VI, 3), for instance Articles 83, 84 and 123(2) EPC.
+8.3 FALSE: Observations by third parties received after the decision to grant the application has been issued in written proceedings (see G 12/91) will be included in the file without taking note of their content. (Guidelines E-VI, 3).
+8.4 FALSE: Third parties who have presented observations concerning the patentability of the invention of the patent are not parties to opposition proceedings (Art. 115 EPC, last sentence and Guidelines D-I,6).
+
+
+
+Question 9:
+When filing a European patent application with 14 claims, the applicant also submits a request for examination by filing the written request and paying the examination fee. The European Patent Bulletin mentions the publication of the European search report on 20 January 2023. The European search opinion states that claim 1 lacks novelty. The applicant receives an invitation under Rule 70(2) and Rule 70a(2) EPC dated 13 February 2023 setting a time limit of six months running from the publication of the European search report.
+For each of the statements 9.1–9.4, indicate on the answer sheet whether the statement is true or false:
+9.1 The application shall be deemed to be withdrawn if the applicant files a reply to the invitation on 14 August 2023.
+9.2 If the applicant omits in his timely reply to the European search opinion to indicate that he wishes to proceed further with the application, the application is deemed to be withdrawn.
+9.3 The applicant can validly file a request for accelerated examination before timely filing of a valid reply to the invitation.
+9.4 If the applicant validly replies to the invitation and files three additional claims, he must pay the claims fees for two claims within one month of filing the claims.
+
+Answer 9:
+9.1 TRUE: Where the applicant is invited to submit the indication provided for in Rule 70(2) EPC, a six-month time limit running from the publication of the search report applies, Rules 70(3) + 70a(3) EPC, GL E VIII 1.2. Final date is 20 July 2023.
+9.2 FALSE: The applicant's response to the search opinion is interpreted as the confirmation required by Rule 70(2) EPC, even where not explicitly expressed as such, Guidelines C-II 1.1.
+9.3 FALSE: Accelerated examination can, in principle, be requested at any time after the examining division has assumed responsibility for the application E-VIII, 4.2. Rule 10(3) EPC: If a request for examination is filed before the European search report has been transmitted to the applicant, the Examining Division shall be responsible from the time when the European Patent Office receives the indication under Rule 70 (2) EPC.
+9.4 FALSE: Rule 71(4) EPC defines that if the European patent application in the text intended for grant comprises more than fifteen claims, the Examining Division shall invite the applicant to pay claims fees in respect of the sixteenth and each subsequent claim.
+
+
+
+Question 10:
+Applicant Andrew names Berta as sole inventor in his European patent application EP-A.
+For each of the statements 10.1–10.4, indicate on the answer sheet whether the statement is true or false:
+10.1 The EPO informs Berta in a communication about her designation as inventor in the European patent application EP-A.
+10.2 Berta can waive her right to be mentioned as inventor in the published European patent application EP-A.
+10.3 If Carla was incorrectly designated as inventor in the European patent application EP-A, there is no way to request rectification of the incorrect designation.
+10.4 Berta can pay any fees to the EPO.
+
+Answer 10:
+10.1 FALSE: No provision anymore in Rule 19 EPC.
+10.2 TRUE: Rule 20(1) EPC.
+10.3 FALSE: Rule 21 EPC.
+10.4 TRUE: Anyone can pay the fees to the EPO (Guidelines A-X, 1).
+
+
+
+
+
+Documents for Question 11, Question 12, Question 13, Question 14, Question 15:
+Description of the application
+Cleaning utensil
+[001] The present invention relates to a cleaning utensil, in particular a cleaning cloth. 
+[002] Cleaning utensils such as cloths, mops and brushes may be used to clean many types of surface. Different types of cleaning utensils may be more effective depending on the type and amount of dirt which has to be removed from the surface. 
+[003] Figure 1 illustrates a first embodiment of a cleaning cloth 1 which comprises an upper layer 2 and a lower layer 3. The lower layer 3 is made of a sponge material and the upper layer 2 is made of fibres 4 that are woven to form a textile. The lower layer 3 may be used to distribute water and cleaning solution over a surface in order to wet and soften the dirt which has to be removed. The textile surface of the upper layer 2 is stiffer than the sponge surface of the lower layer 3 and provides a more abrasive cleaning of the surface to better remove dirt from the surface. The sponge surface of the lower layer 3 may also be used to remove dirt loosened from the surface by the textile surface of the upper layer 2. The cleaning cloth 1, therefore, includes two different types of cleaning surface which can be used for different cleaning actions for an improved cleaning effect.
+[004] Figure 2 illustrates a second embodiment of the cleaning cloth 1 that additionally includes a reinforcement layer 5 that is positioned between the lower sponge layer 3 and the upper layer 2 of woven fibres 4 forming the textile. The reinforcement layer 5 provides an additional mechanical reinforcement of the cleaning cloth 1 which is useful when using the cloth 1 to clean large surfaces. In some embodiments, the reinforcement layer 5 comprises a sponge material which has a higher water absorption capacity than the material of the lower sponge layer 3 and the upper textile layer 2. For example, the sponge material of the reinforcement layer 5 may include a higher degree of porosity which enables it to store a larger amount of water. Thus, the sponge material of the reinforcement layer 5 can release water to the upper and lower layers 2, 3 to prevent the upper and lower layers 2, 3 from becoming too dry. This release of water into the upper and lower layers 2, 3 improves the cleaning action of the cleaning cloth 1. [005] Figure 3 illustrates a third embodiment of the cleaning cloth 1 illustrated in Figure 1 which includes a different arrangement of the fibres 4 of the upper layer 2. The lower layer 3 includes the sponge material. In this third embodiment, a first portion of the fibres 4 is woven to form a web 7 and a second portion of the fibres 4 has upstanding ends 8 or loops 9 protruding upwardly from the web 7. The loops 9 and upstanding ends 8 provide more abrasive cleaning of a surface and also capture dirt removed from the surface thus improving the cleaning efficiency. 
+[006] The fibres 4 of the upper layer 2 of each of the first, second and third embodiments may preferably comprise two portions that include fibres of different weights in order to enhance the cleaning effect. The heavier fibres provide an enhanced mechanical cleaning action by virtue of their stiffness and the lighter fibres ensure sufficient flexibility of the cloth when cleaning non-planar surfaces. If used in the third embodiment, the lighter fibres are used to provide the web 7 and the heavier fibres are used to form the upstanding ends 8 and loops 9 protruding from the face of the web 7. 
+[007] Preferably, the fibres 4 of the first portion have a weight equal to or less than 25 decitex and the fibres 4 of the second portion have a weight of at least 100 decitex. The weight of the fibre refers to the mass per unit length, which is measured in decitex (grams per 10 000 m). The lighter fibres of the first portion make up 65% to 75% of the total mass of the fibres and the heavier fibres of the second portion make up 25% to 35% of the total mass of fibres. 
+[008] In each of the first, second and third embodiments, the fibres 4 comprise one of the following polymers: a polypropylene, a polyamide, a polyester or a combination of these polymers. The sponge material of the first, second and third embodiments may be a natural sponge or a synthetic sponge.  
+Drawings of the application  
+Assume that the following document D1 is prior art under Article 54(2) EPC. 
+Document D1: Cleaning cloth 
+[001] Figure 1 illustrates a cleaning cloth 10. The cleaning cloth 10 comprises a first layer 11 comprising fibres woven to form a textile, a second layer 12 comprising a natural sponge material and a third layer 13 comprising fibres woven to form a textile. The second layer 12 is arranged between the first layer 11 and the third layer 13 such that the sponge material is held in a pouch formed of woven fibres. In some embodiments, the fibres of both the first layer 11 and the third layer 13 comprise polypropylene with an antibacterial coating. 
+[002] The fibres of each of the first and third layers 11, 13 comprise two portions having different weights in order to improve the cleaning action. The fibres of the first portion have a weight of 20 to 35 decitex and the fibres of the second portion have a weight of at least 150 decitex. The weight of the fibre refers to the mass per unit length, which is measured in decitex (grams per 10 000 m). The lighter fibres make up 54% to 64% of the total mass of the fibres and the heavier fibres make up 36% to 46% of the total mass of fibres. 
+[003] The sponge material of the second layer 12 has a greater water absorption capacity than the outer textile layers 11, 13 and can release water into the outer textile layers 11, 13 in use to increase the cleaning efficiency of the cleaning cloth 10.
+Drawing Document D1
+
+
+
+
+Question 11:
+For each of the statements 11.1–11.4, indicate on the answer sheet whether the statement is true or false:
+11.1 Claim I.1 covers the second embodiment.
+11.2 Claim I.1 covers the third embodiment.
+11.3 Claim I.4 is disclosed in the application as filed.
+11.4 Claim I.3 covers all alternatives of the first embodiment.
+
+Answer 11:
+11.1 TRUE: The claim language "comprises" covers additional layers such as the reinforcement layer of the second embodiment.
+11.2 TRUE: The fibres of claim I.1 are not limited to a particular form and cover the web, loops and upstanding ends of the third embodiment.
+11.3 TRUE: As the claims are part of the application as filed and the combination of features is covered by the claims due to the claim dependency.
+11.4 FALSE: As the cleaning utensil in accordance with claim I.3 is limited to one specific fibre material comprising polypropylene, whereas other alternatives of the first embodiment encompass other alternative fibre materials (see [008] of the description).
+
+
+
+Question 12:
+For each of the statements 12.1–12.4, indicate on the answer sheet whether the statement is true or false:
+12.1 Claim I.1 meets the requirements of Article 123(2) EPC.
+12.2 Claim I.4 meets the requirements of Article 123(2) EPC.
+12.3 Claim I.5 meets the requirements of Article 123(2) EPC.
+12.4 Claim I.6 meets the requirements of Article 123(2) EPC.
+
+Answer 12:
+12.1 FALSE: The description includes only embodiments of a cleaning cloth, the genus cleaning utensil of claim I.1 is broader than the species cleaning cloth, see [002] of the description, so that claim I.1 includes other types of cleaning utensil with the further features recited in claim I.1 which are not disclosed in the application as filed.
+12.2 FALSE: As only the combination of a web and loops or upstanding ends is disclosed in the application as filed, in [005] of the description.
+12.3 TRUE: The combination of features is disclosed in the third embodiment of Figure 3 in [005] of the description.
+12.4 FALSE: The combination of the reinforcing layer of the second embodiment with the web and loops or upstanding ends of the third embodiment is not disclosed in the application as filed.
+
+
+
+Question 13:
+For each of the statements 13.1–13.4, indicate on the answer sheet whether the statement is true or false:
+13.1 The subject matter of claim I.1 is novel over D1.
+13.2 The subject matter of claim I.3 is novel over D1.
+13.3 The subject matter of claim I.4 is novel over D1.
+13.4 The subject matter of claim I.7 is novel over D1.
+
+Answer 13:
+13.1 FALSE: D1 discloses a cleaning cloth (a species of a cleaning utensil) with a first layer 12 comprising a sponge material and a second layer 11 comprising fibres.
+13.2 FALSE: D1 discloses fibres comprising polypropylene in layer 13.
+13.3 TRUE: D1 fails to disclose fibres having loops or upstanding ends.
+13.4 FALSE: D1 discloses ranges of 20 to 35 decitex and at least 150 decitex which overlap with the ranges equal to 25 or less decitex and at least 100 decitex (Guidelines G-VI, 8(iii)).
+
+
+
+Question 14:
+For each of the statements 14.1–14.4, indicate on the answer sheet whether the statement is true or false:
+14.1 An objective technical problem solved by the subject-matter of claim I.2 over D1 can be formulated as how to provide a material for releasing water into the first layer to increase the cleaning efficiency.
+14.2 Using the problem-solution approach applied to the subject-matter of claim II.1, an objective technical problem can be formulated as how to improve the cleaning action of a layer comprising fibres.
+14.3 Using the problem-solution approach applied to the subject-matter of claim II.1, an objective technical problem can be formulated as how to provide a more abrasive cleaning action.
+14.4 A valid argument that the cleaning utensil of claim III.1 involves an inventive step is that the claimed ranges of the fibre portions are not obvious from D1 since D1 gives the skilled person no hint at a technical advantage associated with a larger portion of lighter fibres so that the skilled person would not increase the portion of the lighter fibres to more than the maximum 64% disclosed in D1.
+
+Answer 14:
+14.1 FALSE: The distinguishing feature of claim I.2 over D1 is that the sponge is a synthetic sponge. The patent application discloses the technical effect of releasing water into the first layer to increase the cleaning efficiency for sponge material in general and not that this is a technical effect specifically disclosed in connection with synthetic sponges.
+14.2 TRUE: The subject-matter of claim II.1 distinguishes over D1 in that the second portion of the fibers has upstanding ends or loops protruding upwardly from the web. The technical effect of the distinguishing features is disclosed in [005] of the description as providing more abrasive cleaning of a surface and also capture dirt removed from the surface thus improving the clean efficiency.
+14.3 TRUE: The subject-matter of claim II.1 distinguishes over D1 in that the second portion of the fibers has upstanding ends or loops protruding upwardly from the web. The technical effect of the distinguishing features is disclosed in [005] of the description as providing more abrasive cleaning of a surface and also capture dirt removed from the surface thus improving the clean efficiency.
+14.4 TRUE: Indeed, D1 does not disclose any technical effect associated with respect to the amount of the lighter fibres in its cleaning cloth. Thus, in the present case this is one example of a valid argument to support the inventive step of claim III.1.
+
+
+
+Question 15:
+For each of the statements 15.1–15.4, indicate on the answer sheet whether the statement is true or false:
+15.1 Claim I.1, amended during examination proceedings as follows (amendments are underlined), meets the requirement of Article 123(2) EPC: Cleaning utensil comprising: a first layer comprising a sponge material; a second layer comprising fibres; and a reinforcement layer arranged between the first layer and the second layer, wherein the reinforcement layer comprises a sponge material.
+15.2 Claim I.2, amended during examination proceedings as follows (amendments are underlined), meets the requirement of Article 123(2) EPC: Cleaning utensil according to claim I.1, wherein the cleaning utensil is a cleaning cloth and the sponge material comprises a synthetic or a natural sponge.
+15.3 Claim I.3, amended during examination proceedings as follows (amendments are underlined), meets the requirement of Article 123(2) EPC: Cleaning utensil according to claim I.1, wherein the fibres comprise polypropylene a polymer.
+15.4 Claim I.7, amended during examination proceedings in such a way that it is dependent on claim I.5, meets the requirement of Article 123(2) EPC.
+
+Answer 15:
+15.1 FALSE: The sponge material of the reinforcement layer 5 is only disclosed with features of the water absorbing capacity relative to the sponge layer 3 – the amendment has resulted in an intermediate generalisation as the features of the water absorbing capacity relative to the sponge layer 3 have been omitted.
+15.2 FALSE: The “natural sponge” is mentioned in the description in [008] referring to the first, second and third embodiments. All these embodiments require that cleaning utensil comprises woven fibres. Claim I.2 omits the presence of woven fibres, and thus the amendment of claim I.2 results in an unallowable intermediate generalization.
+15.3 FALSE: Only examples of specific polymers are disclosed in [008] in the description. A generalization to any polymer contravenes the requirements of Article 123(2) EPC.
+15.4 TRUE: The subject-matter of claim I.7 corresponds to the third embodiment described in [005] to [007] of the description.
+
+
+
+
+
+Documents for Question 16, Question 17, Question 18, Question 19, Question 20
+Description of the invention PCT 2021/321654, filed 16.08.2019 
+[001] Some writing instruments, e.g. pens and markers, include erasable inks which allow markings formed with the ink to be erased efficiently. It is desirable that erasable inks provide good writing performance when compared with non-erasable inks. 
+[002] This invention provides erasable inks that provide good writing performance when used in writing instruments such as pens. The erasable inks are water-based inks that have a short "waiting time", i.e. inks that can be erased soon after they are applied on a surface made, for instance, of paper. Because the water-based inks are based on using water as a solvent rather than on using other solvents, the erasable inks of the invention are relatively non-toxic and odour-free. 
+[003] All the amounts are expressed, as per the convention in the technical area, as % w/w, corresponding to a weight percent (%) of a given compound per weight of the erasable ink composition. 
+[004] In one aspect, the invention features an erasable ink composition that includes (a) water, (b) a colouring agent, (c) a releasing agent, and optionally (d) a film-forming polymeric binder. 
+[005] The erasable ink compositions of the present invention preferably contain from about 1.0% to 30% w/w of the colouring agent, in the form of a pigment on a solid basis, more preferably about 1.5% to 5% w/w of colouring agent. So to avoid that the colour intensity is too weak for proper reading, the erasable ink has to contain more than 0.75% w/w of the colouring agent.  
+[006] The releasing agent allows the erasable ink composition to be erased from a surface made of paper. It is a finding of the inventors that if the releasing agent includes a modified siloxane, the erasing is even more improved. When the releasing agent includes a modified siloxane, it has to contain less than 1% w/w of colloidal silica. To enhance erasability, it is necessary that the releasing agent has a water solubility ranging from about 0.5% to 70%. 
+[007] The erasable ink compositions preferably contain from about 0.3% to 30% w/w of the releasing agent, more preferably from about 1% to 7% w/w of said releasing agent. If the amount of the releasing agent is too high, the erasable ink composition may smear, whereas if the amount of the releasing agent is too low, then its erasability may be compromised. 
+[008] When present, the polymeric binder is a resin, such as a polyvinyl-based resin (e.g. a resin of PVC or of polyvinyl butyral (PVB)), an acrylic-based resin or a melamine resin. The preferred polymeric binder includes a plasticised polyvinyl butyral resin. It allows the erasable ink composition to shine under the light. 
+[009] Some implementations include one or more of the following features. The water is present in an amount ranging from about 40% to about 90% w/w, the colouring agent is present in an amount ranging from about 1.5% to about 30% w/w, the releasing agent is present in an amount ranging from about 0.3% to about 30% w/w and the optional polymeric binder is present in an amount ranging from about 1% to about 15% w/w, wherein the percentages are by weight of the erasable ink composition. 
+[010] In another aspect, the invention relates to a pen comprising an outer body, a writing tip at one end of said body, a reservoir included within said body and connected to said writing tip, and within said reservoir a water-based erasable ink as described above. 
+[011] Example: An erasable ink composition was formed by mixing the ingredients shown in Table 1, wherein the amounts are percentages by weight of the erasable ink composition:
+Ingredient Amount (w/w) Description
+Water 60% Solvent
+Polyvinyl butyral 23% Binder
+Ethylhexyl Phthalate 8% Plasticiser
+Blue pigment 3.5% Colouring agent
+Polyethylene oxide modified poly (dimethyl) siloxane 5% Releasing agent
+Oleic acid 0.5% Emulsifier
+[012] This ink was applied to a piece of paper. After 30 seconds, an eraser was used to remove the ink of the paper. The ink erased cleanly, leaving no visible residue or staining. A second marking was applied to the piece of paper and allowed to dry for a longer period (60 seconds). This marking also erased cleanly. The ink exhibited an erasability of 95% after a waiting time of 10 seconds, and an erasability of 100% when completely dry. 
+D1 – Advertisement in The Local Sun, published on the 15 August 2019
+[001] For a number of years, there has been a desire to produce a pen that produces an erasable, pencil-like trace. The particular choice of colouring pigments is important for maintaining the erasability of traces formed by the erasable ink composition. 
+[002] Similarly, numerous water-based erasable ink compositions exist in the prior art. Typically, such water-based compositions include a block copolymer such as styrenebutadiene and a pigment. Generally, such erasable ink compositions also include one or more additives such as releasing and spreading agents, antioxidants, surfactants, gelatinisers, lubricants and various waxes. 
+[003] The erasable ink composition of our new pen produces traces that are substantially erasable with a common pencil eraser and are erasable for at least one day after the tracs are formed on paper. [004] Some specificities of our product are: 
+- The pigment, of any colour, is present in an amount of 2% to 25% weight per weight (w/w).
+- An organic ester-based solvent system is present in an amount of 25% to 55 % w/w. 
+-The solvent system comprises a component selected from the group consisting of an optionally substituted cycloalkane, an optionally substituted cycloalkanone, an optionally substituted cycloalkene, and mixtures thereof; and an organic ester. The solvent system may comprise additionally other types of commonly known solvents.
+- A polymeric binder being a liquid butene polymer combined to a plasticiser.
+D2 – Editorial paper published in Pen Technology on 1 March 1995 
+[001] Erasable ink compositions, and more particularly erasable ink compositions for use in writing instruments, are becoming more and more popular. However, erasable ink compositions should not only be erasable but also provide good writing performance when used in writing instruments. 
+[002] The simplest erasable ink composition for use in a writing instrument, such as a pen, comprises a solvent and a pigment. Preferably, said pigment has a flake-like morphology. The pigment, whatever its colour, is dispersed in the solvent. It seems that for the most efficient systems, the erasable ink compositions include from about 5% to about 20% w/w of the flake-like pigment and from about 74% to about 94% w/w of the water-based solvent system. Such erasable ink compositions exhibit an erasability of at least 80%. 
+[003] Optionally, the erasable ink composition can comprise a dispersant. Typically, the dispersants are water-soluble polymers that include polymeric chains. When present, the dispersant is typically included at about 1% to 4% w/w, and most preferably about 1.5% to 2% w/w. Examples of suitable dispersants include, but are not limited to, nonionic copolymers or anionic substituted alkoxylated polymers. One of the advantages of the dispersant is that it forms a film at the surface of the writing as well as to have a releasing effect.
+
+
+
+
+Question 16:
+For each of the statements 16.1–16.4, indicate on the answer sheet whether the statement is true or false:
+16.1 The following feature is described as essential in the description: The erasable ink composition comprises from about 1.5% to about 30% w/w of the colouring agent by weight of the erasable ink composition.
+16.2 The following feature is described as essential in the description: The releasing agent is a modified siloxane.
+16.3 The following feature is described as essential in the description: The modified siloxane-containing releasing agent comprises less than 1% w/w of colloidal silica.
+16.4 The following feature is described as essential in the description: The polymeric binder is a polyvinyl butyral resin.
+
+Answer 16:
+16.1 FALSE: In [005] of the description of the application, the mentioned ranges are preferred ranges. This means that the range of 1.5 to 30.0 % w/w is not an essential feature of the invention.
+16.2 FALSE: [006] of the description of the application states that the erasing can be even further improved when the releasing agent includes a modified siloxane. Thus, the provision of modified siloxane is not an essential feature for ensuring the erasing.
+16.3 TRUE: In [006] of the description of the application it is stated that the releasing agent should always contain less than 1% w/w of colloidal silica, when the releasing agent includes the modified siloxane.
+16.4 FALSE: [008] of the description of the application states that the polymeric binder is a resin. The polyvinyl butyral resin is just one of the alternative resins (PVC, PVB, etc.) mentioned.
+
+
+
+Question 17:
+For each of the statements 17.1–17.4, indicate on the answer sheet whether the statement is true or false:
+17.1 Claim I.1bis, if filed as envisaged, would meet the requirement of Article 123(2) EPC.
+17.2 Claim I.4 meets the requirement of Article 84 EPC.
+17.3 Claim I.5 contains all the essential features.
+17.4 Claim I.8bis, if filed as envisaged, would meet the requirement of Article 123(2) EPC.
+
+Answer 17:
+17.1 FALSE: Claim I.1bis is not completely supported in [004] of the description of the application, as an essential element is missing, i.e. a releasing agent.
+17.2 FALSE: Claim I.4 defines the lower limit for the colouring agent to be 0.5% w/w. However, paragraph 5 of the description of the application teaches that the erasable ink has to contain more than 0.75% w/w of the colouring agent, since the colour intensity would be too weak. Therefore, the essential feature of the colouring agent containing more than 0.75% w/w is missing.
+17.3 FALSE: When the releasing agent comprises a modified siloxane, it should contain less than 1% of colloidal silica by the weight of the erasable ink composition (paragraph 6 of the description of the application).
+17.4 TRUE: Claim I.8bis is based claim I.8 further specifying the amount of water to be from about 40% to about 90% w/w. This specific range for the amount of water is explicitly disclosed in paragraph 9 of the description as one of the several optional features in combination with the embodiments of the application as filed (Guidelines H-V, 3.2, G-VI, 8(i)).
+
+
+
+Question 18:
+For each of the statements 18.1–18.4, indicate on the answer sheet whether the statement is true or false:
+18.1 Claim I.1 is novel over D1.
+18.2 Claim I.1 is novel over D2.
+18.3 Claim I.3 is novel over D2.
+18.4 Claim I.6 is novel over D2.
+
+Answer 18:
+18.1 FALSE: While D1 directed to a solvent system with an organic ester, D1 discloses in the introduction what is commonly known in the field of erasable ink composition. D1 discloses in paragraph 2 a water-based erasable ink comprising a pigment, i.e. a colouring agent and a releasing agent.
+18.2 FALSE: D2 discloses an erasable ink composition ([001]) comprising: (a) water ([002]), (b) a colouring agent ([002]; pigment = colouring agent), (c) and a releasing agent ([003]). Thus, all the features of claim I.1 are disclosed in D2 and the subject-matter of claim I.1 is not novel over D2.
+18.3 FALSE: D2 discloses an erasable ink composition ([001]) comprising: (a) water ([002]), (b) a colouring agent ([002]; pigment = colouring agent), (c) a releasing agent ([003], since the dispersant of D2 has a releasing effect) and a film-forming polymeric binder ([003], since the dispersant is a water-soluble polymer that includes polymeric chains and has the effect of forming a film). D2 does not explicitly disclose that the water is present in an amount ranging from about 40 to about 90% w/w, however it discloses an overlapping range, i.e. about 74% to about 94% w/w ([002] of D2). According to the GL G VI-8, the criteria mentioned in relation to selection inventions can be applied analogously for assessing the novelty of overlapping numerical ranges (see T 17/85), i.e. (a) is the selected sub-range narrower compared to the known range; and (b) is the selected sub-range sufficiently far removed from any specific examples disclosed in the prior art and from the end-points of the known range. This is not the case here, thus, the subject-matter of claim I.3 is not novel over D2.
+18.4 TRUE: D2 does not disclose an erasable ink composition comprising the polyvinyl butyral resin being present in an amount ranging from about 1 to 15% w/w.
+
+
+
+Question 19:
+For each of the statements 19.1–19.4, indicate on the answer sheet whether the statement is true or false:
+19.1 D1 mentions that water in the solvent system has disadvantages.
+19.2 D1 teaches that an essential element of all erasable ink compositions is the presence of a releasing agent.
+19.3 D2 discloses a pen that contains an erasable ink composition.
+19.4 D2 does not teach that the erasability of the erasable ink composition is dependent on the drying time.
+
+Answer 19:
+19.1 FALSE: D1 discloses a solvent system which does not comprise water. D1 mentions generally other types of commonly known solvents without excluding other solvents. Thus, D1 does not mention explicitly that water has disadvantages as a solvent.
+19.2 FALSE: D1 discloses that the commonly known erasable ink composition may comprise a releasing agent ([002]), but among the specific features related to the product of D1 ([004]), no releasing agent is listed. Thus, D1 does not teach that a releasing agent is an essential feature of any erasable ink composition.
+19.3 TRUE: D2 explicitly refers to a pen as a writing instrument ([002]). Furthermore, D2 is an editorial paper published in Pen Technology. Thus, D2 does teach explicitly that a pen contains the erasable ink composition.
+19.4 TRUE: D2 does not mention the drying time or any dependency on time of the erasable ink composition. Thus, D2 does not teach that the erasable ink composition is dependent on the drying time.
+
+
+
+Question 20:
+For each of the statements 20.1–20.4, indicate on the answer sheet whether the statement is true or false:
+20.1 In an opposition procedure, an opponent will likely be successful with a novelty attack against claim II.1 over D2.
+20.2 In an opposition procedure, an opponent will likely be successful with a novelty attack against claim II.2 over D1.
+20.3 In an opposition procedure, an opponent will likely be successful with an attack under Article 83 EPC against claim II.3.
+20.4 In an opposition procedure, an opponent will likely be successful with an attack under Article 123(2) EPC against claim II.2.
+
+Answer 20:
+20.1 TRUE: D2 discloses an erasable ink composition comprising: (a) from about 74 to about 94% w/w of water (overlapping with the range from II.1); (b) from 5 to 20% w/w of the flake-like pigment (overlapping with the range from II.1.); (c) from 1 to 4% w/w of dispersant/releasing agent/film forming polymer (once more overlapping with the range from II.1). Note that the releasing agent of D2 also play the role of a film-forming polymeric binder ([003]). According to the GL G VI-8, the criteria mentioned in relation to selection inventions can be applied analogously for assessing the novelty of overlapping numerical ranges (see T 17/85), i.e. (a) is the selected sub-range narrower compared to the known range; and (b) is the selected sub-range sufficiently far removed from any specific examples disclosed in the prior art and from the end-points of the known range. Although here we have four overlapping ranges, the ranges are neither narrower nor far removed from the end-points of the known ranges. Please further note that feature (d) of claim II.1 is optional. Thus, claim II.1 would not be new over D2.
+20.2 FALSE: D1 does not disclose an erasable ink composition comprising a modified siloxane as a releasing agent.
+20.3 FALSE: Claim II.3 has rather a clarity problem (Article 84 EPC, which is not a ground for opposition), as it lacks the essential features to achieve the effect sought. However, the application (as required by Article 83 EPC) does provide the teaching to carry out the invention as exemplified in [011] of the description (Guideline F-III, 1).
+20.4 TRUE: The application explicitly states that when the releasing agent includes a modified siloxane, it should contain less than 1% w/w of colloidal silica (paragraph 6 of the description). Claim II.2, however, is not limited to comprise any colloidal silica, although the claimed erasable ink composition comprises a modified siloxane. An erasable ink composition comprising a modified siloxane without any colloidal silica is not directly and unambiguously derivable from the application as originally filed.
