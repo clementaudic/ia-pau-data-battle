@@ -13,7 +13,11 @@ def _get_documents_retriever(collection_name: Literal["eqe", "epac"]) -> VectorS
         embeddings=embeddings,
         connection=EnvConfig.DATABASE_URL,
         use_jsonb=True
-    ).as_retriever(search_kwargs={"k": 2})
+    ).as_retriever(search_kwargs={
+        "k": 5,
+        "score_threshold": 0.7,
+        "fetch_k": 20
+    })
 
 
 eqe_documents_retriever = _get_documents_retriever("eqe")
