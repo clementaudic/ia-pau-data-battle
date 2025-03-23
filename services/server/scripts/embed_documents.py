@@ -1,6 +1,6 @@
 from typing import List, Literal, Tuple
 
-from flask import Blueprint
+from flask import Blueprint, current_app as app
 from langchain_core.vectorstores import VectorStoreRetriever
 
 from libs.ai.documents import load_documents
@@ -12,6 +12,8 @@ documents_embedding_blueprint = Blueprint("documents_embedding", __name__, cli_g
 
 @documents_embedding_blueprint.cli.command("embed-documents")
 def embed_documents() -> None:
+    app.logger.info("Starting document embedding...")
+
     directory_retriever_coupling: List[Tuple[Literal["eqe", "epac"], VectorStoreRetriever]] = [
         ("eqe", eqe_documents_retriever),
         ("epac", epac_documents_retriever)
@@ -21,8 +23,10 @@ def embed_documents() -> None:
         documents = load_documents(directory)
 
         if len(documents) == 0:
-            print(f"No documents found in the '{directory}' directory")
+            print(f"No documents to embed from the '{directory}' directory.")
             continue
+
+        app.logger.info(f"Adding from the '{directory}' directory to the store...")
 
         retriever.add_documents(documents)
 

@@ -27,6 +27,12 @@ def create_chat() -> Response:
     subject = data.get("subject")
     first_message = data.get("first_message")
 
+    database.chat.delete_many(where={
+        "messages": {
+            "isEmpty": True
+        }
+    })
+
     created_chat = database.chat.create({
         "subject": ChatSubject(subject).value,
         "messages": [{

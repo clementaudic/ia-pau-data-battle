@@ -1,6 +1,7 @@
 from os import path
 from typing import List, Literal, Optional, Iterator
 
+from flask import current_app as app
 from langchain_community.document_loaders import DirectoryLoader, UnstructuredPDFLoader, TextLoader
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -13,6 +14,8 @@ _legal_publications_documents: Optional[List[Document]] = None
 
 def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
     global _legal_publications_documents
+
+    app.logger.info(f"Loading documents from the '{directory}' directory...")
 
     data_directory = path.join("data", "cleaned")
 
@@ -52,9 +55,11 @@ def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
         chunk_overlap=AiConfig.DOCUMENT_CHUNK_OVERLAP,
     )
 
-    loaded_documents = directory_loader.lazy_load()
+    loaded_documents = directory_loader.load()
 
     documents = text_splitter.split_documents(loaded_documents)
+
+    app.logger.info(f"Loaded {len(loaded_documents)} documents from the '{directory}' directory ({len(documents)} chunks after splitting)")
 
     #documents.extend(_legal_publications_documents)
 

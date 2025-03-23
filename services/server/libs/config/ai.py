@@ -13,9 +13,9 @@ class AiConfig:
     DOCUMENT_CHUNK_OVERLAP: int = 100
 
     LLM_MODEL: str = "nemotron-mini"
-    LLM_TEMPERATURE: float = 0.25
-    LLM_TOP_K: int = 10
-    LLM_TOP_P: float = 0.25
-    LLM_NUM_PREDICT: int = -2
-    LLM_REPEAT_PENALTY: float = 0.25
-    LLM_REPEAT_LAST_N: int = -1
+    LLM_CONTEXT_WINDOW: int = 4096
+    LLM_TEMPERATURE: float = 0.1
+    LLM_TOP_K: int = 20
+    LLM_TOP_P: float = 0.7
+    LLM_NUM_PREDICT: int = 712
+    LLM_REPEAT_PENALTY: float = 1.2
