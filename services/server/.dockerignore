@@ -3,3 +3,5 @@ Makefile
 .env*
 Dockerfile
 __pycache__/
+env
+env.prod
