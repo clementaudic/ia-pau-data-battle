@@ -17,7 +17,7 @@ all: install run
 setup-backend:
 	@echo "🔧 Création et activation de l'environnement virtuel..."
 	$(VENV_EXISTS) || $(PYTHON) -m venv $(VENV)
-	@echo "✅ Environnement virtuel créé !"
+	@echo "✅ Environnement virtuel créé !" 
 	@echo "📦 Installation des dépendances..."
 	. $(VENV)/bin/activate && pip install -r $(BACKEND_DIR)/requirements.txt
 	@echo "✅ Backend installé !"

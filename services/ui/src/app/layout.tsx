@@ -1,23 +1,24 @@
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
-import './globals.css';
-import type { PropsWithChildren } from 'react';
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import "./globals.css";
+import type { PropsWithChildren } from "react";
 
 const appFont = Poppins({
-    subsets: ['latin'],
-    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: 'App',
+  title: "App",
 };
 
-export default function RootLayout({ children  }: PropsWithChildren) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={`${appFont.className}`}>
-        {children}
-      </body>
+      <head>
+        <link rel="icon" href="/little_icon.png" type="image/png" />
+      </head>
+      <body className={appFont.className}>{children}</body>
     </html>
   );
 }
