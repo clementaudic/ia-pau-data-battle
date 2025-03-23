@@ -46,7 +46,7 @@ def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
     )
 
     text_splitter = RecursiveCharacterTextSplitter(
-        separators=["\n\n\n", "\n\n"],
+        separators=["\n\n\n", "\n\n", "\n"],
         keep_separator=False,
         chunk_size=AiConfig.DOCUMENT_CHUNK_SIZE,
         chunk_overlap=AiConfig.DOCUMENT_CHUNK_OVERLAP,
