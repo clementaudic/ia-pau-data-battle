@@ -1,0 +1,440 @@
+Question 1 :
+You are a professional representative before the EPO. Today, 25 February 2019, you receive an email from your client, an Italian engineer, Pietro. He wants you to file a European patent application EP-P in his name, claiming priority of IT-P, an Italian patent application. IT-P was jointly filed in the name of Pietro and Gianna on 23 February 2018. A copy of IT-P is attached to the email. No other document or information is sent with the email.
+For each of the statements 1.1 – 1.4, indicate on the answer sheet whether the statement is true or false:
+1.1 On the basis of the information given above, you can file today a European patent application EP-P, which will be accorded 25 February 2019 as the date of filing, in Pietro’s name at the EPO.
+1.2 On the basis of the information given above, you can be sure that EP-P can validly claim priority from IT-P.
+1.3 You can validly file EP-P in Italian.
+1.4 Pietro as a natural person is not entitled to a reduction of the filing fee.
+
+Answer 1 :
+Since you can comply today with the requirements of Rule 40(1)(a), (b) and (c) EPC [i.e. providing an indication that a European patent is sought; providing your own or Pietro’s contact details; and filing the description of IT-P or a reference to it], the date of filing will be 25 February 2019 (Guidelines, A-II 4.1).
+For validly claiming the priority, Gianna must have transferred the priority right to Pietro (and Pietro must be the successor in title) before the filing date of EP-P, Article 87(1) EPC and Guidelines, A-III, 6.1(ii).
+A European patent application may be filed in any language, Article 14(2) EPC.
+Being a national of the Contracting State Italy and being a natural person, Pietro is entitled to a reduction of the filing fees, Rule 6(3) and (4)(b) EPC and Article 14(4) EPC.
+1.1 – TRUE
+1.2 – FALSE
+1.3 – TRUE
+1.4 – FALSE
+
+
+
+Question 2 :
+You are a professional representative before the EPO and represent the patent proprietor in opposition proceedings. You are summoned to oral proceedings. The language of the proceedings is English. The patent proprietor has its headquarters in the USA and has a research centre in Portugal. You informed the opposition division in due time that you would attend the oral proceedings accompanied by Sarah, the inventor. You have stated that Sarah would make oral submissions at the oral proceedings and would explain feature X of claim 1. On the day of the oral proceedings you arrive with Sarah, but also with Jane and Pedro, whose intention to attend was not previously made known. Jane is a US patent agent. Pedro is employed at the research centre in Portugal. The opponent's representative is also attending the oral proceedings.
+For each of the statements 2.1 – 2.4, indicate on the answer sheet whether the statement is true or false:
+2.1 You will be allowed to make oral submissions at the oral proceedings.
+2.2 As a general rule, Jane will be allowed to make oral submissions at the oral proceedings.
+2.3 As a general rule, Pedro will be allowed to make oral submissions at the oral proceedings.
+2.4 If the parties and the opposition division agree, Sarah will be allowed to make oral submissions in Portuguese at the oral proceedings.
+
+Answer 2 :
+The representative is allowed to make oral submissions, Article 133(2) EPC, see also Guidelines, E-III, 8.5 and G4/95.
+Submissions by a person who is not qualified under Article 133 and 134 EPC cannot be made as of right: among others, the request should be filed sufficiently in advance of the oral proceedings. Thus, as a general rule, neither Jane nor Pedro will be allowed to speak.
+Sarah would be allowed to make submissions in Portuguese for instance, if the parties and the European patent office agree to use this language (Rule 4(4) EPC), or if the patent proprietor provides for interpretation into the language of proceedings (Rule 4(1) EPC).
+2.1 – TRUE
+2.2 – FALSE
+2.3 – FALSE
+2.4 – TRUE
+
+
+
+Question 3 :
+Company Z filed a European patent application EP-Z on 30 January 2018, without claiming any priority. EP-Z has eleven claims. Alina and Elena are designated as the inventors of EP-Z. However, Alina is wrongly designated as an inventor. The EPO drew up a search report and a favourable opinion in August 2018. An international application
+PCT-Z was filed in December 2018, validly claiming the priority of EP-Z.
+For each of the statements 3.1 – 3.4, indicate on the answer sheet whether the statement is true or false:
+3.1 The first communication in respect of EP-Z that can be expected from the examining division is a communication under Rule 71(3) EPC.
+3.2 If you receive a communication under Rule 71(3) EPC for EP-Z in October 2019 and if you fulfil all the requirements of Rule 71(5) EPC on 31 January 2020, no fees other than the grant and publishing fee are due.
+3.3 It is possible to cancel the designation of Alina as an inventor of EP-Z without Alina's consent.
+3.4 PCT-Z will be deemed to be withdrawn, once a patent is granted on the basis of EP-Z.
+
+Answer 3 :
+Since a favourable written opinion was established, a communication under Rule 71(3) EPC can be expected as the first communication of the examining division.
+The renewal fee for the third year is due on 31 January 2020 according to Rule 51(1) EPC. If a renewal fee becomes due before the next possible date for publication of the mention of the grant of the European patent, the decision to grant is not issued and the mention of the grant is not published until the renewal fee has been paid, Rule 71a (4) EPC, Guidelines, C-V, 2. Decision to grant and publication of the mention of the grant may take several months after fulfillment of the requirements of R. 71(5) EPC. Thus, also the renewal fees are due when you fulfil all the requirements of Rule 71(5) EPC on 31 January 2020.
+The consent of the wrongly designated person (Alina) is required, Rule 21(1) EPC.
+The PCT does not provide for an international application (PCT-Z) to be deemed to be withdrawn, once a patent is granted on the basis of the priority application (EP-Z).
+3.1 – TRUE
+3.2 – FALSE
+3.3 – FALSE
+3.4 – FALSE
+
+
+
+Question 4 : 
+Today, 25 February 2019, Didier files a European patent application EP-D with the EPO. Didier is resident in Belgium.
+For each of the statements 4.1 – 4.4, indicate on the answer sheet whether the statement is true or false:
+4.1 If Didier files the application in Dutch, he must file a translation into one of the EPO's official languages within two months of filing the application.
+4.2 Didier can pay the search fee in May 2019 provided he requests further processing.
+4.3 If Didier does not submit any claims either on filing or within the time limit set by the EPO in a communication inviting him to correct this deficiency, Didier can validly request further processing and file the claims.
+4.4 To validly file a European patent application, Didier can file a reference to a previously filed application, wherein the reference contains (i) the filing date of the previous application, (ii) the file number of the previous application, (iii) the office where the previous application was filed and (iv) an indication that this reference replaces the description and any drawings.
+
+Answer 4 :
+A translation of the description must be filed in one of the official languages within the period of two months, Article 14(2) EPC, Rule 6(1) EPC and Guidelines, A-VII, 1.1.
+If the search fee is not paid within one month of the filing of European patent application, the application will be deemed to be withdrawn, Rule 38(1) EPC and Article 78(2) EPC. The time limit under Rule 38(1) EPC is not ruled out for further processing (Article 121(1) and (4) EPC and Rule 135(2) EPC). Consequently, Didier can validly pay the search fee provided he requests further processing.
+If Didier does not file claims in accordance with Rule 57(c) and Rule 58 EPC, then Didier cannot validly request further processing, since it is ruled out under Rule 135(2) EPC, see also Guidelines, A-III, 15.
+To validly file a European patent application, Didier can file a reference to a previously filed application, wherein the reference contains (i) the filing date of the previous application, (ii) the file number of the previous application, (iii) the office where the previous application was filed and (iv) an indication that this reference replaces the description and any drawings, Rule 40(1)(c) EPC and Guidelines, A-II, 4.1.3.1.
+4.1 – TRUE
+4.2 – TRUE
+4.3 – FALSE
+4.4 – TRUE
+
+
+
+Question 5 : 
+Antonia intends to file the following patent applications:
+(1) a European patent application EP-A
+(2) an international patent application PCT-AW.
+PCT-AW will be jointly filed in the name of Antonia and Werner.
+Werner lives in Berlin; Antonia lives in Argentina and is of Argentinian nationality. Argentina is not a PCT member state.
+For each of the statements 5.1 – 5.4, indicate on the answer sheet whether the statement is true or false:
+5.1 Antonia can validly file EP-A with the EPO.
+5.2 PCT-AW can be validly filed with the EPO as receiving Office.
+5.3 PCT-AW can be validly filed with the International Bureau as receiving office.
+5.4 If, two months after validly filing PCT-AW, Antonia moves to Berlin, the EPO will record in relation to PCT-AW the change of residence, upon request.
+
+Answer 5 :
+There are no nationality or residence restrictions for filing a European patent application with the EPO, Article 58 EPC.
+The EPO is the receiving Office competent for applicant Werner, who has his residence within one of the Contracting States (Germany), Article 151 EPC, Rule 157(1) EPC and Rule 19.1(a) PCT. If there are two (or more) applicants, the requirements of Rule 19.1 PCT regarding where to file are satisfied if the international application is filed with the competent receiving office of at least one of the applicants, Rule 19.2(i) PCT.
+A PCT application can be validly filed before the International Bureau (IB) whatever the nationality or residence of the applicant, Rule 19.1(iii) and Rule 19.2 (ii) PCT.
+Only the IB can record the residence change upon the applicant’s request, Rule 92bis.1.(a) (i)PCT.
+5.1 – TRUE
+5.2 – TRUE
+5.3 – TRUE
+5.4 – FALSE
+
+
+
+Question 6 :
+Company A filed a European patent application EP-AB with the EPO. Company A and Company B agreed to transfer European patent application EP-AB to Company B. All Contracting States are designated.
+For each of the statements 6.1 – 6.4, indicate on the answer sheet whether the statement is true or false:
+6.1 It is possible to register in the European Patent Register Company A as sole applicant for EP-AB for the EPC contracting state Germany and to register Company B as sole applicant for EP-AB for all the other EPC contracting states.
+6.2 The only conditions for recording the assignment of EP-AB from Company A to Company B for all contracting states in the European Patent Register are the submission of a written request signed by Company B and the payment of an administrative fee.
+6.3 The transfer of a European patent application only becomes effective vis-à-vis the EPO when it is published in the European Patent Register.
+6.4 The transfer of a European patent can be recorded in the European Patent Register during the opposition period.
+
+Answer 6 :
+According to Article 71 EPC, a European patent application can be transferred for one or more designated Contracting States (two or more applicants may be designating different Contracting States, see also Article 59 EPC).
+For recording the assignment, Rule 143(1)(w) EPC, the EPO requires the submission of a request (R. 22(1) EPC), the payment of an administrative fee (Rule 22(2) EPC) and also documents providing evidence of the transfer (Rule 22(1) EPC), for example an assignment made in writing and signed by Company A and Company B (Art. 72 EPC, Guidelines E-XIV, 3).
+The transfer is effective vis-à-vis the EPO as soon as the documents providing evidence of the transfer have been produced, Rule 22(3) EPC.
+A European patent can validly be transferred and the transfer can be recorded even during opposition proceedings, Rule 85 EPC in conjunction with Rule 22 EPC.
+6.1 – TRUE
+6.2 – FALSE
+6.3 – FALSE
+6.4 – TRUE
+
+
+
+Question 7 :
+Company X has filed a European patent application EP-X before the EPO. Company Y has filed a European patent application EP-Y before the EPO. Neither EP-X nor EP-Y claim any priority. Company X developed the invention of European patent application EP-X in Canada, and Company Y developed the same invention in Germany
+independently of Company X's invention. The filing date of EP-X is before the filing date of EP-Y. Both applications claim the same subject-matter and disclose the same invention.
+No other patent applications have been filed by Company X or Company Y.
+For each of the statements 7.1 – 7.4, indicate on the answer sheet whether the statement is true or false:
+7.1 The right to a European patent on the invention belongs to Company X even if a European patent based on EP-Y was granted before the grant of a European patent based on EP-X.
+7.2 The right to a European patent on the invention belongs to Company X even if EP-X was withdrawn without being published.
+7.3 During proceedings before the EPO, Company X and Company Y will inevitably be asked to prove their entitlement to exercise the right to their respective European patents.
+7.4 Even if EP-X was published after the filing date of EP-Y, EP-X could be validly cited as prior art in evaluating the inventive step of EP-Y.
+
+Answer 7 : 
+The right to the European patent belongs to the applicant who has filed the European patent application with the earliest effective date (i.e. 7.1 is True) provided that the European patent application is published, Article 60(2) EPC (i.e. 7.2 is False).
+During proceedings before the European Patent Office, the applicant is deemed to be entitled to exercise the right to a European patent, Article 60(3) EPC.
+In the case that EP-X was published after the filing date of EP-Y, EP-X could not be cited as prior art in evaluating the inventive step of EP-Y, but only for assessing novelty under Article 54(3) EPC.
+7.1 – TRUE
+7.2 – FALSE
+7.3 – FALSE
+7.4 – FALSE
+
+
+
+Question 8 :
+An applicant receives two notifications from the EPO on 5 February 2019. Both notifications are dated 31 January 2019. The first notification relates to the international application PCT-S and the second notification relates to European patent application EP-S.
+For each of the statements 8.1 – 8.4, indicate on the answer sheet whether the statement is true or false:
+8.1 If a period of one month is set for replying to the notification relating to PCT-S, that time limit will expire on 11 March 2019.
+8.2 If a period of two months is set for replying to the notification relating to PCT-S, that time limit will expire on 9 April 2019.
+8.3 The notification relating to EP-S will be deemed to have been delivered on Sunday, 10 February 2019.
+8.4 If a period of four months is set for replying to the notification relating to EP-S, that time limit will expire on 10 June 2019.
+
+Answer 8 :
+If a period of one month is set for replying to the notification relating to PCT-S, then the time limit expires on 28 February [31 January 2019 + 1 month (=28 February 2019)], Rule
+80.2 PCT.
+If a period of two months is set for replying to the notification relating to PCT-S, then the time limit expires on 1 April 2019 [31 January 2019 + 2 month (=31 March 2019), extended to 1 April 2019], Rule 80.2 PCT and Rule 80.5 PCT. The PCT provisions do not have the so-called “ten-day-rule”, see for instance Rule 80.6 PCT.
+The notification relating to EP-S is deemed to be delivered on Sunday, 10 February 2019, [31 January 2019 +10 days (=10 February 2019)], Rule 126(2) EPC.
+If a period of four months is set for replying to the notification relating to EP-S, then the time limit expires on 11 June 2019 , [31 January 2019 +10 days (=10 February 2019)] + 4
+months (=10 June 2019), extended to 11 June 2019], Rule 126(2) EPC, Rule 131(4) EPC and Rule 134(1) EPC.
+8.1 – FALSE
+8.2 – FALSE
+8.3 – TRUE
+8.4 – FALSE
+
+
+
+Question 9 :
+For each of the statements 9.1 – 9.4, indicate on the answer sheet whether the statement is true or false:
+In the following case, the EPO will refund at least a part of the respective fee:
+9.1 The examination fee for a European patent application is refunded in full if the European patent application is withdrawn before the examining division has assumed responsibility for it.
+9.2 The opposition fee is refunded in part if the opposition is withdrawn before the notice of opposition is communicated to the patent proprietor.
+9.3 The examination fee for a European patent application is refunded in part if the European patent application is withdrawn today, 25 February 2019, which is two weeks after receipt of the first invitation under Article 94(3) EPC issued by the examining division proper.
+9.4 The appeal fee is refunded in full if the appeal is withdrawn before the filing of the statement of grounds of appeal and before the period for filing that statement has expired.
+
+Answer 9 :
+The examination fee for a European patent application is refunded in full, if the European patent application is withdrawn before the Examining Division has assumed responsibility, Article 11(a) Rfees (i.e. 9.1 is True), and it is refunded in part, if the application is withdrawn before expiry of the time limit for replying to the first invitation under Article 94(3) EPC, Article 11(b) Rfees (i.e. 9.3 is True).
+Two weeks after the receipt of the invitation will be certainly within the period set in Rule 11(b) Rfees.
+There is no provision for refunding (a part of) the opposition fee.
+The appeal fee is refunded in full if the appeal is withdrawn before the filing of the statement of grounds of appeal and before the period for filing that statement has expired, Rule 103(1)(b) EPC.
+9.1 – TRUE
+9.2 – FALSE
+9.3 – TRUE
+9.4 – TRUE
+
+
+
+Question 10 :
+Hans filed an admissible notice of opposition against European patent EP-H. EP-H was validated in all EPC contracting states. EP-H validly claims priority from an earlier patent application. In the notice of opposition, Hans raised an objection of lack of inventive step of claim 1 over the combination of two prior art documents, D1 and D2. While the opposition proceedings are pending, Theresa files third-party observations, arguing that claim 1 lacks novelty over D3, a German patent application filed before the priority date of EP-H and published after that date.
+For each of the statements 10.1 – 10.4, indicate on the answer sheet whether the statement is true or false:
+10.1 Third parties are entitled to file observations during opposition proceedings.
+10.2 If oral proceedings are to be held and the opposition division follows Theresa’s objections with regard to novelty, it will also summon Theresa to the oral proceedings.
+10.3 If the European patent is maintained in amended form, it could contain different claims for different designated states.
+10.4 If Hans does not file a copy of D1 within the opposition period, the opposition will be inadmissible.
+
+Answer 10 :
+Third party observations can be filed at any stage of the proceedings before the EPO (after publication of a European patent application), Article 115 EPC. Third party observations can be filed also during opposition proceedings, Guidelines, D-X 4.5).
+Theresa is not party to the proceedings, Article 115 EPC, second sentence: thus, she will not be summoned to oral proceedings.
+In the case of the national prior right D3, the European patent EP-H may contain claims for Germany which are different from those for the other designated States, Rule 138 EPC.
+If Hans does not file a copy of D1 with the notice of opposition, he will be invited by the EPO to file this document in due time, Rule 83 EPC: if the document is not filed, the opposition division may decide not to take into account any arguments based on that document.
+10.1 – TRUE
+10.2 – FALSE
+10.3 –TRUE
+10.4 – FALSE
+
+
+
+Client’s application
+(with claims as originally filed)
+The present invention relates to a washing composition in the form of a tablet. The washing composition comprises:
+(a) One or more detergents (i.e. surface active agents), preferably in an amount of 10 to 30% of the weight of the tablet.
+(b) One or more builders, preferably in an amount of 20 to 60% of the weight of the tablet. Builders help to keep the water soft. Various builders and the properties described herein are known to the skilled person. Builders can be (i) phosphate- based (i.e. they comprise phosphate salts) or (ii) phosphate salt-free (e.g. polycarbonate-based, silicate-based and so on). Phosphate salt-free builders are preferred.
+(c) One or more bleaches, preferably in an amount of 10 to 30% of the weight of the tablet. Bleaches destroy coloured dirt components such as chocolate or red wine stains.
+(d) Optionally a colourant, preferably in an amount of 1 to 5% of the weight of the tablet.
+With regard to the tablet, preferably all detergents are contained in a first layer of the tablet and all bleaches are contained in a second layer of the tablet. We have now discovered that the pressure typically used to prepare the tablet by way of compression leads to the degradation of one or more bleaches, whenever the detergents and one or more bleaches are mixed together. The advantage of having all detergents and all bleaches in separate layers is to preserve the bleaches, both during compression and during storage. Preferably a third layer is placed between the first and the second layer. The third layer preferably comprises only a builder.
+For questions 11 to 14, consider that the following claims are the ones originally filed:
+I.1 A tablet comprising one or more detergents, one or more builders, and one or more bleaches.
+I.2 A tablet according to claim I.1, wherein the tablet comprises a first layer and a second layer.
+I.3 A tablet according to claims I.1 or I.2, wherein the first layer comprises a detergent.
+I.4 A tablet according to any one of claims I.1 to I.3, wherein the second layer comprises a bleach.
+I.5 A tablet according to claim I.2, wherein all detergents are contained in the first layer of the tablet and all bleaches are contained in the second layer of the tablet.
+I.6 A tablet according to claim I.2, wherein the first layer and the second layer are separated by a third layer placed between the first and the second layer.
+I.7 A tablet according to claim I.2, wherein the tablet comprises a third layer.
+I.8 A tablet according to claim I.6, wherein the third layer comprises one or more builders.
+I.9 A tablet according to claim I.7, wherein the tablet consists of the first layer, the second layer and the third layer.
+Document D1
+D1 discloses tablets usable in washing machines and dishwashers. The tablets include, as usual, a detergent, a builder, and a bleach. In a first embodiment, all ingredients are mixed together and compressed to form a tablet. In a second embodiment, the tablet is rendered optically more attractive to the consumer. According to the second embodiment, all ingredients are mixed together and then the mixture is divided into two separate parts. To a first part of the blend, a colourant is added. The first part of the mixture forms the first layer of the tablet and the second part of the mixture (which does not comprise the colourant) forms the second layer of the tablet.
+Document D2
+D2 discloses washing tablets comprising two or more layers. Bleaches, detergents, and colourants are usually produced by different manufacturers. It is suggested to produce a tablet comprising three layers: a first layer comprising a builder and a bleach, a second layer comprising a builder and a detergent and a third layer comprising a builder and a colourant.
+
+Question 11 :
+For each of the statements 11.1 – 11.4, indicate on the answer sheet whether the statement is true or false:
+11.1 Claim I.5 lacks clarity because of its dependency.
+11.2 Claim I.4 clearly defines that the tablet has a first layer comprising a detergent and a second layer comprising a bleach.
+11.3 Claim I.8 clearly defines that no builder is contained in the first and second layer.
+11.4 A tablet comprising one or more detergents, one or more builders and one or more bleaches, wherein the tablet comprises four layers, falls under the scope of
+claim I.9.
+
+Answer 11 :
+Claim I.5 relates back to claim I.2 only. The first layer and the second layer are clearly defined.
+Claim I.4 relates back to any one of claims I.1 to I.3: there is no clear definition on what the first layer can be or contain when claim I.4 is dependent on claim I.1 and on claim I.2
+Claim I.8 contains no clear definition on what the first layer and second layer contains.
+Claim I.9 is limited to consist of three layers, i.e. a tablet comprising four layers does not fall under the scope of claim I.9.
+11.1 – FALSE
+11.2 – FALSE
+11.3 – FALSE
+11.4 – FALSE
+
+
+
+Question 12 :
+For each of the statements 12.1 – 12.4, indicate on the answer sheet whether the statement is true or false:
+12.1 The first embodiment of D1 destroys the novelty of the subject-matter of claim I.2.
+12.2 The second embodiment of D1 destroys the novelty of the subject-matter of claim I.2.
+12.3 The first embodiment of D1 destroys the novelty of the subject-matter of claim I.3, when claim I.3 is dependent on claim I.2.
+12.4 D1 destroys the novelty of the subject-matter of claim I.7.
+
+Answer 12 : 
+The first embodiment of D1 does not disclose a first and a second layer. This embodiment does not destroy the novelty of the subject-matter of claim I.2.
+The second embodiment of D1 is a tablet which includes bleaches and detergents (see first sentence of D1) and contains a first layer and a second layer (see last sentence). This embodiment destroys the novelty of the subject-matter of claim I.2.
+Claim I.3, when dependent on claim I.2 relates to a tablet comprising one or more bleaches and one or more detergents, comprising a first layer and a second layer, wherein the first layer comprises a detergent. The first embodiment of D1 does not disclose a second layer. This embodiment does not destroy the novelty of the subject-matter of claim I.3, when dependent on claim I.2.
+D1, second embodiment, discloses only a first layer and a second layer but no third layer: D1 does not destroy the novelty of the subject-matter of claim I.7
+12.1 – FALSE
+12.2 – TRUE
+12.3 – FALSE
+12.4 – FALSE
+
+
+
+Question 13 : 
+For each of the statements 13.1 – 13.4, indicate on the answer sheet whether the statement is true or false:
+13.1 The subject-matter of claim I.8 is novel over D2.
+13.2 The subject-matter of claim I.7 is novel over D2.
+13.3 The subject-matter of claim I.3 is novel over D2.
+13.4 The subject-matter of claim I.4 is novel over D2.
+
+Answer 13 :
+D2 discloses a tablet (first sentence) comprising detergent, builder and bleach, and a first, a second and a third layer, wherein all layers comprise builder (third sentence). Therefore, claim I.8 is not novel over D2. (Note: claim I.8 being dependent on claims I.6, I.2, and I.1
+does not define the ingredients of the various layers, apart from the so-called third layer, which includes one or more builders).
+D2 discloses a tablet (first sentence) comprising one or more bleaches (a bleach in D2, third sentence) and one or more detergents (a detergent in D2, third sentence), wherein the tablet contains two separate layers and a third layer (see third sentence). Therefore, claim I.7 is not novel over D2.
+D2 discloses a tablet comprising two or more layers, wherein the tablet comprises one or more bleaches (a bleach in the first layer of the tablet of D2) and one or more detergents (a detergent in the second layer of D2), wherein the first layer comprises one detergent (the second layer of D2 is considered as the first layer according to claim I.3). Therefore, claim I.3 is not novel over D2.
+D2 discloses a tablet including two or more layers, wherein the tablet comprises one or more bleaches (a bleach in the first layer of the tablet of D2) and one or more detergents (a detergent in the second layer of D2), wherein the second layer comprises one bleach (the first layer of D2 is considered as the second layer according to claim I.4). Therefore, claim I.4 is not novel over D2.
+13.1 – FALSE
+13.2 – FALSE
+13.3 – FALSE
+13.4 – FALSE
+
+
+
+Question 14 :
+For each of the statements 14.1 – 14.4, indicate on the answer sheet whether the statement is true or false:
+Under Article 123(2) EPC, there is a basis for amending claim I.1 of the originally filed application as follows:
+14.1 A tablet comprising one or more detergents, one or more builders, and one or more bleaches, wherein the builder comprises phosphate salts.
+14.2 A tablet comprising one or more detergents, one or more builders, and one or more bleaches, wherein the builder is phosphate salt-free.
+14.3 A tablet comprising one or more detergents, one or more builders, and one or more bleaches, and a colourant in an amount of 5% of the weight of the tablet.
+14.4 A tablet comprising one or more detergents, one or more bleaches, and a colourant in an amount of 1 to 5% of the weight of the tablet, wherein the colourant is in the same layer as the detergent.
+
+Answer 14 :
+Basis for the amendment in 14.1 is the description part b) i). Basis for the amendment in 14.2 is the description on part b) ii).
+Basis for the amendment in 14.3 is the description part d). The value 5% is explicitly disclosed as an endpoint of the range.
+There is in the application as filed no direct and unambiguous disclosure to which layer the colorant is added and no basis for deleting the builders.
+14.1 – TRUE
+14.2 – TRUE
+14.3 – TRUE
+14.4 – FALSE
+
+
+
+Question 15 :
+For this question, consider that the following claim is one that was originally filed and that documents D1 and D2 are cited as prior art.
+II.1 A tablet comprising one or more bleaches, one or more detergents, and one or more builders, wherein all the detergents are contained in the first layer of the tablet and all the bleaches are contained in the second layer of the tablet and a third layer is placed between the first and the second layer.
+For each of the statements 15.1 – 15.4, indicate on the answer sheet whether the statement is true or false:
+15.1 The closest prior art can only be a document that deals with the technical problem of preserving the bleach.
+15.2 D2 does not teach to provide a tablet which contains one or more bleaches in one layer and one or more detergents in a different layer.
+15.3 D2 does not teach that a bleach can be stabilized by separating it from a detergent.
+15.4 D2 does not teach that the layer containing all the detergents must be separated from the layer containing all the bleaches with the aid of a third layer.
+For questions 16 to 20, consider that the following description and Fig. 1 are the ones originally filed.
+Description of the invention
+[01] The present patent application relates to a composite structure such as an aircraft wing cover. Usually, such composite structures are mechanically fastened, for instance by bolts, to other workpieces. The bolts pass through holes in the composite structure.
+[02] The problem is to strengthen the holes.
+[03] The solution is to employ reinforcing inserts for the holes in the composite structure. An embodiment provides a composite structure comprising a stack of plies of fibre-reinforced composite material, one or more reinforcing inserts and one or more holes. The holes pass through the reinforcing inserts.
+[04] Preferably, a support layer is joined to each reinforcing insert. The support layer is formed from a different material to the plies of composite material. The support layer carries the reinforcing inserts during the assembly of the composite structure, and improves the fastening strength.
+[05] The composite fibres are preferably carbon fibres, while the support layer is made of metal such as aluminium.
+[06] Fig. 1 shows a composite structure 1 comprising a stack 2 which has 10 to 100 plies of fibre-reinforced composite material and a support layer such as a support grid 3. Cylindrical reinforcing inserts 4 are embedded in the stack 2 and bonded to the support grid 3. A hole 5 passes through each reinforcing insert 4.
+[07] The mesh size is measured according to standard XYZ. The mesh size of the support grid 3 is between 0.5 and 1500, preferably between 100 and 150. It was discovered by chance that using a support grid 3 having a mesh size between 100 and 150 improves the fastening strength considerably. This further improves the strengthening effect of the reinforcing inserts 4.
+
+Answer 15 : 
+The closest prior art is that which in one single reference discloses the combination of features which constitutes the most promising starting point for a development leading to the invention, Guidelines, G-VII, 5.1. It need not disclose exactly the same technical problem addressed in the application (and not solved by the subject-matter of claim II.1).
+D2 teaches the bleach in a first layer and the detergent in a second layer.
+D2 neither deals with the stability of bleach (i.e. 15.3 is True), nor does it mention to separate the layer containing the detergent from the layer containing the bleach by aid of a third layer (i.e. 15.4 is True).
+15.1 – FALSE
+15.2 – FALSE
+15.3 – TRUE
+15.4 – TRUE
+
+
+
+Question 16 :
+For each of the statements 16.1 - 16.4, indicate on the answer sheet whether the statement is true or false:
+The following features are described as essential in the description:
+16.1 The mesh size is between 0.5 and 1500.
+16.2 The presence of at least one hole in the composite structure.
+16.3 The composite fibres are carbon fibres.
+16.4 The presence of at least one reinforcing insert.
+For questions 17 to 20, consider that the following claims are the ones originally filed:
+Claims
+III.1 A composite structure comprising a stack of plies of fibre-reinforced composite material.
+III.2 The composite structure according to claim III.1, further comprising one or more reinforcing inserts and one or more holes.
+III.3 The composite structure according to claim III.1 or III.2, further comprising a support layer joined to the reinforcing inserts.
+III.4 The composite structure according to any one of claims III.1 to III.3, wherein the support layer is a support grid.
+III.5 The composite structure according to any one of claims III.1 to III.4, comprising a support grid with a mesh size between 0.5 and 1500, measured according to standard XYZ.
+III.6 The composite structure according to claim III.5, wherein the support grid has a mesh size between 100 and 150, measured according to standard XYZ.
+III.7 The composite structure according to any one of claims III.1 to III.6, wherein the support grid is made of aluminium.
+III.8 The composite structure according to any one of claims III.1 to III.7, wherein the stack has 10 to 100 plies of fibre-reinforced composite material.
+
+Answer 16 :
+The norm XYZ mesh size is indicated for the support grid 3 which is an optional feature (see paragraphs [004] and [006]), and therefore the mesh size is not described as being essential in the description.
+The problem is to strengthen holes and the solution is to employ reinforcing inserts for the holes in the composite structure, consequently the presence of at least one hole is an essential feature in the description (see paragraphs [002]-[003]).
+Carbon fibre is a preferred material for the composite fibre. Therefore it is not described as an essential feature in the description (see paragraph [005]).
+The problem is to strengthen holes, and the solution is to employ reinforcing inserts for the holes in the composite structure (see paragraphs [002]-[003]). Consequently the presence of at least one reinforcing insert is an essential feature in the description (see paragraph [003]).
+16.1 – FALSE
+16.2 – TRUE
+16.3 – FALSE
+16.4 – TRUE
+
+
+
+Question 17 : 
+For each of the statements 17.1 - 17.4, indicate on the answer sheet whether the statement is true or false:
+17.1 Claim III.2 clearly solves the technical problem of the invention as stated in paragraph [002].
+17.2 A composite structure comprising a stack of plies of fibre-reinforced composite material and a support grid of copper falls under the scope of claim III.1.
+17.3 A composite structure comprising a stack of 50 plies of fibre-reinforced composite material falls under the scope of claim III.8.
+17.4 There is a direct and unambiguous basis in the application to amend claim III.8 to read as follows: “The composite structure according to any one of claims III.1 to III.6, wherein the stack has 50 plies of fibre-reinforced composite material”.
+For questions 18 to 20, consider that D11 and D12 have been cited as prior art documents.
+Document D11
+[01] The invention is directed to a composite structure comprising a stack of plies of fibre-reinforced composite material. The invention provides a strong structure for aircraft components such as aircraft wing covers.
+[02] Fig. 2 shows a composite structure 10 comprising a stack 13 of plies of fibre- reinforced composite material and a support grid 12. This composite structure 10 is stronger than a structure without a support grid.
+[03] The mesh size is measured according to standard XYZ. The mesh size of the support grid 12 is between 0.7 and 2000.
+Document D12
+[01] The invention is directed to a structure for bicycle components. Bicycle components are often mechanically fastened using fastening elements such as screws or the like. The problem to be solved is to strengthen holes for receiving the fastening elements.
+[02] Fig. 3 shows a composite structure 20 comprising a stack 23 which has 5 to 90 plies of fibre-reinforced composite material. Very big elliptical reinforcing inserts 21 are embedded in the stack 23. A hole 22 passes through each reinforcing insert 21.
+
+Answer 17 : 
+Claim III.2 does not specify that holes pass through the reinforcing inserts. It is not clear from claim III.2 that the reinforcing inserts strengthen the holes. The features as indicated in claim III.2 are not enough for solving the technical problem.
+Claim III.1 does not exclude the presence of a support grid (whatever material it is made of) due to the presence of the term “comprising”.
+The value of 50 plies of fibre-reinforced composite material lies in the range defined in claim III.8.
+There is no direct and unambiguous basis in the application as filed to amend claim III.8 for replacing the range by the specific value of 50 (Guidelines G-VI, 8 and H-V, 3.2).
+17.1 – FALSE
+17.2 – TRUE
+17.3 – TRUE
+17.4 – FALSE
+
+
+
+Question 18 :
+For each of the statements 18.1 - 18.4, indicate on the answer sheet whether the statement is true or false:
+18.1 The subject-matter of claim III.2 is novel over D12.
+18.2 The subject-matter of claim III.5 is novel over D11.
+18.3 The subject-matter of claim III.6 is novel over D11.
+18.4 The subject-matter of claim III.8 is novel over D12.
+
+Answer 18 :
+D12 discloses a composite structure ((20) in Figure 3, [002]) comprising a stack (23) of plies of fibre-reinforced composite material, and one or more reinforcing inserts (21) and one or more holes (22). Thus, the subject matter of claim III.2 is not novel over D12.
+D11 discloses a composite structure ((10) in Figure 2, [002]) comprising a stack(13) of plies of fibre-reinforced composite material , and a support grid (12) which has a norm XYZ mesh size between 0.5 and 1500 (D11 discloses the range 0.7-2000 and the end-point value 0.7 destroys the novelty of the range claimed in III.5, see Guidelines, G-VI, 8 (ii) (b)). Thus, the subject-matter of claim III.5 is not novel over D11.
+D11 discloses a composite structure ((10) in Figure 2, [002]) comprising a stack (13) of plies of fibre-reinforced composite material, and a support grid (12). However D11 does not disclose the norm XYZ mesh size of the support grid (12) between 100 and 150. The selected sub-range is narrow compared to the known range, and sufficiently far removed from any specific values disclosed in the prior art, see Guidelines, G-VI, 8 (ii) (a) and (b). Thus, the subject matter of claim III.6 is novel over D11.
+D12 discloses a composite structure ((20) in Figure 3, [002]) comprising a stack (23) having 10 to 100 plies of fibre-reinforced composite material (The range 5 – 90 is disclosed in D12 and the end-point value 90 destroys the novelty of the range claimed in III.8, see Guidelines, G-VI, 8 (ii) (b)). Thus, the subject matter of claim III.8 is not novel over D12.
+18.1 – FALSE
+18.2 – FALSE
+18.3 – TRUE
+18.4 – FALSE
+
+
+
+Application : 
+For questions 19 and 20, consider that the following new set of claims (A.1 and A.2) has been filed by the applicant during the examination proceedings:
+A.1 A composite structure comprising:
+▪ a stack of plies of fibre-reinforced composite material,
+▪ one or more reinforcing inserts, and
+▪ one or more holes extending through the reinforcing inserts, characterised in that it further comprises a support grid joined to the reinforcing inserts.
+A.2 The composite structure according to claim A.1, wherein the support grid has a mesh size between 100 and 150, measured according to standard XYZ.
+
+Question 19 : 
+For each of the statements 19.1 - 19.4, indicate on the answer sheet whether the statement is true or false:
+19.1 Claim A.1 is allowable under Article 123(2) EPC.
+19.2 Claim A.2 is allowable under Article 123(2) EPC.
+19.3 Claim A.1 is in a correct two-part form with respect to D12 as the closest prior art.
+19.4 D12 can be considered to be the closest prior art because it addresses the strengthening of holes in a composite structure.
+
+Answer 19 :
+Claim A.1 results from the combination of claims 1 to 4 as originally filed, and the feature of paragraph [003] last sentence. Claim A.2 is based on the combination of claims 5 and 6 as originally filed. Therefore, the statements 19.1 and 19.2 are True.
+However, there is a potential difference in scope between the wording in the description (e.g. paragraph [003] last sentence) and the wording of claim A.1 (“pass through” vs. “extending through”) in the English version. Also there may be valid counter-arguments in view of an un-allowed intermediate generalization. For this reason it was exceptionally decided to award marks for both answers, True and False, for the statements 19.1 and 19.2.
+D12 discloses a composite structure ((20) in Figure 3, [002]) comprising:
+• a stack (23) of plies of fibre-reinforced composite material,
+• one or more reinforcing inserts (21) and
+• one or more holes (22) extending through the reinforcing inserts (see paragraph [002] and Figure 3),but D12 does not disclose a support grid joined to the reinforcing inserts being the characterizing portion of claim A.1.
+D12 is directed to strengthen holes for receiving the fastening elements (last sentence of paragraph [001] of D12). The purpose is the same as that of the invention (Guidelines G- VII, 5.1).
+19.1 – TRUE or FALSE
+19.2 – TRUE or FALSE
+19.3 – TRUE
+19.4 – TRUE

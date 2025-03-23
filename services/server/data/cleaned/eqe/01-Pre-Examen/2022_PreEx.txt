@@ -218,7 +218,7 @@ False: Oppositions are not transferrable, but may be inherited or succeeded to a
 
 
 
-Part3:
+Application 3:
 Description of a European patent application
 [01] It is generally known that yoga mats are used by athletes to perform yoga exercises. Yoga mats are thin, soft mats which are easily rolled and transported to allow the athlete to use them in various locations. Once rolled out on the floor, a yoga mat has a length of 1.5 to 2.2 metres and a width of 0.6 to 1.0 metres. Described herein is an improved yoga mat.
 [02] In an embodiment, we provide a yoga mat with a first colour on a first face and a different second colour on the second face. When the yoga mat is rolled out and in use, the first face is in contact with the floor and the second face is in contact with the athlete. This allows the athlete to always use the yoga mat such that the same face of the yoga mat is in contact with the floor.
@@ -246,7 +246,8 @@ D1:This document discloses a yoga mat. Before use, the athlete rolls out the yog
 D2:This document discloses a yoga mat containing the material poly-Z on at least one face of the mat. Poly-Z has the following advantage: upon contact with the athlete’s body it reduces the generation of sweat on the athlete’s body. Advantageously, in a preferred embodiment, one face of the yoga mat is partially coated with a layer of poly-X. This material provides a strong adhesion of the yoga mat onto the floor while the athlete performs exercises. After use, the mat can be easily removed from the floor.
 D3:Many athletes mark their yoga mats (e.g. by writing their names on one of the faces) to clearly distinguish the first face of the mat, which is in contact with the athlete, and the second face, which remains in contact with the floor.
 D4:Silver ions are used as antibacterial materials in many textiles (such as clothes, carpets) and on polymer material used for covering the floor of gymnastic halls. Antibacterial materials have the effect that they prevent or at least reduce the growth of bacteria. Such an effect is only to be found in very special metal materials such as silver ions or copper ions.
-Question 11 : 
+
+Question 11 :
 For each of statements 11.1–11.4, indicate on the answer sheet whether it is true or false:
 11.1 A yoga mat consisting of poly-X is covered by the scope of claim 7.
 11.2 The material of claim 5 is defined by means of a functional feature.
@@ -344,7 +345,7 @@ FALSE: D1 discloses a yoga mat made entirely of poly-Y. This means that in D1 po
 
 
 
-Part 4 :
+Application :
 Description of a second European patent application
 [01] The present invention aims at preserving wine (or other alcoholic beverages like beer or other beverages having 10 vol.% alcohol or more) that remains in a bottle once the bottle has been opened but not all the wine in the bottle has been consumed. Oxygen from the air that remains in the bottle, in the space between the wine level and the opening of the bottle (the so-called “headspace”), causes oxidation of the wine. The oxidation of the wine renders the wine unpleasant in taste.
 [02] A device for preserving wine is known from D11. This device consists of a handactuated vacuum pump that is used to remove air (and therefore also oxygen) from the headspace of the opened bottle. A disadvantage of this device is that the volatile aroma substances included in the wine are also removed by the pumping process. Another disadvantage is that many hand actuations are necessary to remove sufficient air from the headspace.
@@ -371,6 +372,7 @@ Document D13
 [01] This document discloses an industrial method for preserving liquids. It is known that fish oil is easily spoiled by oxygen upon storage. The method consists of injecting nitrogen into the headspace of a bottle filled with fish oil before closing the bottle and transporting such bottles to the various points of sale.
 [02] It is known by the skilled person that nitrogen is lighter than oxygen. Therefore, the nitrogen must be injected just above the level of the fish oil within the bottle. Nitrogen evacuates through the opening of the bottle, but some oxygen is removed as well. After injecting a volume of nitrogen equal to 20 times of the volume of the headspace into the headspace of the bottle, virtually no oxygen can be traced in the headspace of the bottle.
 [03] Clearly, this method can be applied to many types of liquid, such as perfumes and beer.
+
 Question 16 :
 For each of statements 16.1–16.4, indicate on the answer sheet whether it is true or false:
 16.1 D13 destroys the novelty of the subject-matter of claim II.1.
