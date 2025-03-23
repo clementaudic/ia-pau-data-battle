@@ -46,10 +46,10 @@ class Message:
         })
 
     def to_lc_message(self) -> BaseMessage:
-        match self.sender:
-            case MessageSender.USER:
+        match self.sender.value:
+            case MessageSender.USER.value:
                 return HumanMessage(content=self.content)
-            case MessageSender.AI:
+            case MessageSender.AI.value:
                 return AIMessage(content=self.content)
 
         raise ValueError("Invalid message sender")

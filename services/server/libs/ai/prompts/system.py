@@ -2,15 +2,18 @@ from langchain_core.messages import SystemMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder, HumanMessagePromptTemplate
 
 _eqe_template = """
-
+You are asked a question about the European Qualifying Examination (EQE).
 """
 
 _epac_template = """
-
+You are asked a question about the European Patent Application Convention (EPAC).
 """
 
 _shared_template = """
-Context for the question (from the documents):
+Answer the question with explanations and cite 
+relevant articles and rules if needed. If you don't know the answer, say that you don't know.
+
+Context for the question (from relevant documents):
 {context}
 
 User question:

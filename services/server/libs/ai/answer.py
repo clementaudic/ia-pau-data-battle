@@ -25,9 +25,9 @@ def answer_question(question: str, subject: ChatSubject, chat_history: List[Mess
     qa_chain: Optional[Runnable] = None
 
     match subject:
-        case ChatSubject.EQE:
+        case ChatSubject.EQE.value:
             qa_chain = eqe_qa_chain
-        case ChatSubject.EPAC:
+        case ChatSubject.EPAC.value:
             qa_chain = epac_qa_chain
 
     if qa_chain is None:
