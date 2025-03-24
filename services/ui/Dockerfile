@@ -2,9 +2,11 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
-COPY . .
+COPY package.json yarn.lock ./
 
 RUN yarn install
+
+COPY . .
 
 RUN yarn build
 
@@ -12,11 +14,8 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY --from=build /app/package.json /app/yarn.lock ./
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/.next/ ./.next
 COPY --from=build /app/public/ ./public
-COPY --from=build /app/next.config.ts ./
-#COPY --from=build /app/.env ./
+COPY --from=build /app/.next/standalone/ ./
+COPY --from=build /app/.next/static/ ./.next/static
 
-ENTRYPOINT ["yarn", "start"]
+ENTRYPOINT ["node", "server.js"]

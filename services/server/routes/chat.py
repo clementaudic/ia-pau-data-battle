@@ -21,11 +21,9 @@ def get_all_chats() -> Response:
 def create_chat() -> Response:
     data = parse_request_body(request, [
         {"name": "subject", "key": "subject", "type": str, "required": True},
-        {"name": "first_message", "key": "first_message", "type": str, "required": True},
     ])
 
     subject = data.get("subject")
-    first_message = data.get("first_message")
 
     database.chat.delete_many(where={
         "messages": {
@@ -33,11 +31,12 @@ def create_chat() -> Response:
         }
     })
 
-    created_chat = database.chat.create({
+    created_chat = database.chat.create(data={
+        "title": f"New chat - {subject}",
         "subject": ChatSubject(subject).value,
         "messages": [{
             "sender": MessageSender.AI.value,
-            "content": first_message
+            "content": "Hello! How can I help you today?"
         }]
     })
 

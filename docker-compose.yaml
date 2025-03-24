@@ -1,11 +1,15 @@
 name: data-battle-services
 
 services:
-  #  ui:
-  #    container_name: ui
-  #    build: ./services/ui
-  #  depends_on:
-  #    - server
+  ui:
+    image: data-battle-ui
+    container_name: data-battle-ui
+    build: ./services/ui
+    ports:
+      - '3000:3000'
+    env_file: ./services/ui/.env.prod
+    depends_on:
+      - server
 
   server:
     image: data-battle-server

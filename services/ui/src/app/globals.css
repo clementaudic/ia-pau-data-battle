@@ -1,5 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-.blue {
-    background-color: #0b60d1;
-  }
+@theme {
+    --color-primary: #0b60d1;
+    --color-neutral: #8c8c8c;
+}
