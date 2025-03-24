@@ -1,43 +1,36 @@
-import { LandingText } from '@/components/LandingText';
-import Link from 'next/link';
-import type { IconType } from 'react-icons';
-import { RiQuestionAnswerFill, RiQuestionnaireFill } from 'react-icons/ri';
+import { ChatCreationButton } from '@components/chats/ChatCreationButton';
+import { LandingText } from '@/components/landing/LandingText';
+import { SubjectSelector } from '@components/landing/SubjectSelector';
+import { QuizCreationButton } from '@components/quizzes/QuizCreationButton';
+import { SuspenseBoundary } from '@components/ui/SuspenseBoundary';
+import type { Subject } from '@lib/types';
 
-export default function AppPage() {
+interface AppPageProps {
+    searchParams: Promise<{
+        subject: Subject;
+    }>;
+}
+
+export default async function AppPage({ searchParams }: AppPageProps) {
+    const { subject } = await searchParams;
+    
     return (
         <div className="flex flex-col items-center justify-center gap-20 size-full">
             <LandingText />
-            <div className="flex gap-10">
-                <ActionButton
-                    icon={RiQuestionAnswerFill}
-                    text="New chat"
-                    href="/app/chats/new"
-                />
-                <ActionButton
-                    icon={RiQuestionnaireFill}
-                    text="New quiz"
-                    href="/app/quizzes/new"
-                />
+            <div className="flex flex-col items-center gap-10">
+                <div className="flex flex-col items-center gap-5">
+                    <p className="text-2xl font-semibold text-center">
+                        What are you training for today?
+                    </p>
+                    <SuspenseBoundary fallback={null}>
+                        <SubjectSelector/>
+                    </SuspenseBoundary>
+                </div>
+                <div className="flex flex-wrap justify-center gap-10">
+                    <ChatCreationButton subject={subject}/>
+                    <QuizCreationButton subject={subject}/>
+                </div>
             </div>
         </div>
-    );
-}
-
-interface ActionButtonProps {
-    icon: IconType;
-    text: string;
-    href: string;
-}
-
-function ActionButton({ icon: Icon, text, href }: ActionButtonProps) {
-    return (
-        <Link href={href}>
-            <div className="flex flex-col justify-center items-center gap-5 size-60 p-5 text-primary not-hover:outline not-hover:outline-gray-100 rounded-2xl shadow-lg hover:shadow-xl hover:bg-primary hover:text-white transition-all duration-300">
-                <Icon className="size-20" />
-                <p className="text-2xl font-semibold">
-                    {text}
-                </p>
-            </div>
-        </Link>
     );
 }

@@ -34,7 +34,7 @@ export interface Message {
     content: string;
 }
 
-export enum ChatSubject {
+export enum Subject {
     EQE = 'EQE',
     EPAC = 'EPAC',
 }
@@ -42,8 +42,14 @@ export enum ChatSubject {
 export interface Chat extends Entity {
     updatedAt: string;
     title: string;
-    subject: ChatSubject;
+    subject: Subject;
     messages: Message[];
+    userId: User['id'];
+}
+
+export interface Quiz extends Entity {
+    title: string;
+    subject: Subject;
     userId: User['id'];
 }
 
@@ -64,7 +70,13 @@ export const registerSchema = z.object({
 export type RegisterData = z.infer<typeof registerSchema>;
 
 export const chatCreationSchema = z.object({
-    subject: z.nativeEnum(ChatSubject, { message: 'Subject is required' }),
+    subject: z.nativeEnum(Subject, { message: 'Subject is required' }),
 });
 
 export type ChatCreationData = z.infer<typeof chatCreationSchema>;
+
+export const quizCreationSchema = z.object({
+    subject: z.nativeEnum(Subject, { message: 'Subject is required' }),
+});
+
+export type QuizCreationData = z.infer<typeof quizCreationSchema>;

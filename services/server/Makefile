@@ -5,7 +5,7 @@ VENV = venv
 # Commande pour vérifier si un environnement virtuel existe
 VENV_EXISTS = [ -d $(VENV) ]
 
-.PHONY: install run clean
+.PHONY: install run clean db embed
 
 all: install run
 
@@ -23,16 +23,14 @@ install: clean
 db:
 	prisma db push --schema=libs/database/schema.prisma
 
-
 embed:
 	@echo "📦 Embedding documents..."
 	flask embed-documents
 
-
 ## 📍 4. Lancer le backend (Flask)
 run:
 	@echo "🚀 Démarrage du backend..."
-	flask --app app.py run --port 5000
+	flask --app app.py run --port 5000 --reload
 
 ## 📍 7. Nettoyer les fichiers inutiles
 clean:

@@ -3,12 +3,12 @@ import Link from 'next/link';
 import type { PropsWithChildren } from 'react';
 import { RiSparkling2Fill } from 'react-icons/ri';
 
-export default function MainLayoutPage({ children }: PropsWithChildren) {
+export default function MainLayout({ children }: PropsWithChildren) {
     // TODO: Add profile fetching
     
     return (
         <div className="relative flex flex-col size-full">
-            <header className="sticky top-0 left-0 flex justify-between items-start gap-2.5 p-5">
+            <header className="sticky top-0 left-0 flex justify-between items-start gap-2.5 p-5 bg-gradient-to-b from-white from-50% to-transparent">
                 <Link href="/app">
                     <Image
                         src="/logo.png"

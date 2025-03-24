@@ -1,8 +1,8 @@
 from os import path
-from typing import List, Literal, Optional, Iterator
+from typing import List, Literal, Optional
 
 from flask import current_app as app
-from langchain_community.document_loaders import DirectoryLoader, UnstructuredPDFLoader, TextLoader
+from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
@@ -15,12 +15,11 @@ _legal_publications_documents: Optional[List[Document]] = None
 def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
     global _legal_publications_documents
 
-    app.logger.info(f"Loading documents from the '{directory}' directory...")
-
     data_directory = path.join("data", "cleaned")
 
-    #if _legal_publications_documents is None:
-    if _legal_publications_documents is not None:
+    if _legal_publications_documents is None:
+        app.logger.info("Loading legal publications...")
+
         pdf_splitter = RecursiveCharacterTextSplitter(
             chunk_size=AiConfig.DOCUMENT_CHUNK_SIZE,
             chunk_overlap=AiConfig.DOCUMENT_CHUNK_OVERLAP
@@ -28,17 +27,20 @@ def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
 
         legal_publications_loader = DirectoryLoader(
             path=path.join(data_directory, "legal_pubs"),
-            loader_cls=UnstructuredPDFLoader,
+            loader_cls=TextLoader,
             use_multithreading=True,
             max_concurrency=10,
-            sample_size=1
         )
 
         _legal_publications_documents = []
 
-        loaded_legal_publications: Iterator[Document] = legal_publications_loader.lazy_load()
+        loaded_legal_publications = legal_publications_loader.load()
 
         _legal_publications_documents = pdf_splitter.split_documents(loaded_legal_publications)
+
+        app.logger.info(f"Loaded {len(loaded_legal_publications)} legal publications ({len(_legal_publications_documents)} chunks after splitting)")
+
+    app.logger.info(f"Loading documents from the '{directory}' directory...")
 
     directory_loader = DirectoryLoader(
         path=path.join(data_directory, directory),
@@ -61,7 +63,7 @@ def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
 
     app.logger.info(f"Loaded {len(loaded_documents)} documents from the '{directory}' directory ({len(documents)} chunks after splitting)")
 
-    #documents.extend(_legal_publications_documents)
+    documents.extend(_legal_publications_documents)
 
     return documents
 

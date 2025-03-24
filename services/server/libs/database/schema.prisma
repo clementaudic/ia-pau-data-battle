@@ -24,7 +24,7 @@ model User {
     @@schema("data")
 }
 
-enum ChatSubject {
+enum Subject {
     EQE
     EPAC
 
@@ -36,7 +36,7 @@ model Chat {
     createdAt DateTime    @default(now())
     updatedAt DateTime    @updatedAt
     title     String
-    subject   ChatSubject
+    subject   Subject
     messages  Json[]      @default([])
     user      User        @relation(fields: [userId], references: [id])
     userId    String

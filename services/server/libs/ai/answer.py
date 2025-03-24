@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 from langchain_core.runnables import Runnable
-from prisma.enums import ChatSubject
+from prisma.enums import Subject
 
 from libs.ai.chains import eqe_qa_chain, epac_qa_chain
 from models.message import Message, MessageSender
@@ -21,13 +21,13 @@ class _AnswerResult:
         return self._answer
 
 
-def answer_question(question: str, subject: ChatSubject, chat_history: List[Message]) -> _AnswerResult:
+def answer_question(question: str, subject: Subject, chat_history: List[Message]) -> _AnswerResult:
     qa_chain: Optional[Runnable] = None
 
     match subject:
-        case ChatSubject.EQE.value:
+        case Subject.EQE.value:
             qa_chain = eqe_qa_chain
-        case ChatSubject.EPAC.value:
+        case Subject.EPAC.value:
             qa_chain = epac_qa_chain
 
     if qa_chain is None:

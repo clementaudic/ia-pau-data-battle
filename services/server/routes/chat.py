@@ -1,5 +1,8 @@
+import uuid
+
 from flask import Blueprint, request, jsonify, Response
-from prisma.enums import ChatSubject
+from prisma import Json
+from prisma.enums import Subject
 from prisma.models import Chat
 
 from libs.ai.answer import answer_question
@@ -33,11 +36,14 @@ def create_chat() -> Response:
 
     created_chat = database.chat.create(data={
         "title": f"New chat - {subject}",
-        "subject": ChatSubject(subject).value,
-        "messages": [{
-            "sender": MessageSender.AI.value,
-            "content": "Hello! How can I help you today?"
-        }]
+        "subject": Subject(subject).value,
+        "messages": [
+            Json({
+                "sender": MessageSender.AI.value,
+                "content": "Hello! How can I help you today?"
+            })
+        ],
+        "userId": uuid.uuid4().hex
     })
 
     return jsonify(created_chat)

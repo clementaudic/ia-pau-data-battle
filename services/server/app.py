@@ -12,7 +12,11 @@ setup_logging()
 
 app = Flask(__name__)
 
-CORS(app, origins="*", supports_credentials=True)
+CORS(
+    app=app,
+    origins=["http://localhost:3000", "http://ui:3000"],
+    supports_credentials=True
+)
 
 app.register_blueprint(base_blueprint)
 app.register_blueprint(chat_blueprint)
