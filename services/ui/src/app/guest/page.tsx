@@ -24,7 +24,7 @@ export default function GuestPage() {
                             <Link href="/auth/register" className="underline underline-offset-2">
                                 Sign up
                             </Link>
-                            {' '}to have full access to Patent Maestro full features !
+                            {' '}to have full access to Patent Maestro features !
                         </p>
                     </div>
                 </Fragment>
