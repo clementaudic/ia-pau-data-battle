@@ -63,7 +63,7 @@ def load_documents(directory: Literal["eqe", "epac"]) -> List[Document]:
 
     app.logger.info(f"Loaded {len(loaded_documents)} documents from the '{directory}' directory ({len(documents)} chunks after splitting)")
 
-    documents.extend(_legal_publications_documents)
+    #documents.extend(_legal_publications_documents)
 
     return documents
 

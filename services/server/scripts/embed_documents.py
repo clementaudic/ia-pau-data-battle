@@ -15,8 +15,8 @@ def embed_documents() -> None:
     app.logger.info("Starting document embedding...")
 
     directory_retriever_coupling: List[Tuple[Literal["eqe", "epac"], VectorStoreRetriever]] = [
+        ("epac", epac_documents_retriever),
         ("eqe", eqe_documents_retriever),
-        ("epac", epac_documents_retriever)
     ]
 
     for directory, retriever in directory_retriever_coupling:

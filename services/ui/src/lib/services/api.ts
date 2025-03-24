@@ -1,5 +1,5 @@
 import { clientEnv, serverEnv } from '@config/env';
-import { DEFAULT_ERROR_MESSAGE, LOGIN_PAGE_ROUTE } from '@lib/constants';
+import { DEFAULT_ERROR_MESSAGE, GUEST_PAGE_ROUTE } from '@lib/constants';
 import type { RequestConfig, RequestConfigData, RequestConfigParams } from '@lib/types';
 
 const generateFullUrl = (baseUrl: string, path: string, params?: RequestConfigParams) => {
@@ -47,10 +47,10 @@ export class ApiService {
                 
                 const requestCookies = await cookies();
                 
-                const sessionCookie = requestCookies.get('user_session');
+                const authCookie = requestCookies.get('auth_token');
                 
-                if (sessionCookie) {
-                    allHeaders.set('Cookie', `${sessionCookie.name}=${sessionCookie.value}`);
+                if (authCookie) {
+                    allHeaders.set('Cookie', `${authCookie.name}=${authCookie.value}`);
                 }
             } catch (error) {
                 return this.handleError(error instanceof Error ? error : new Error(DEFAULT_ERROR_MESSAGE));
@@ -89,13 +89,13 @@ export class ApiService {
             if (typeof window === 'undefined') {
                 const { redirect } = await import('next/navigation');
                 
-                redirect(LOGIN_PAGE_ROUTE);
+                redirect(GUEST_PAGE_ROUTE);
             } else {
-                window.location.href = LOGIN_PAGE_ROUTE;
+                window.location.href = GUEST_PAGE_ROUTE;
             }
         }
         
-        return this.handleError(new Error((responseBody as { message: string }).message ?? DEFAULT_ERROR_MESSAGE));
+        return this.handleError(new Error((responseBody as { error: { message: string } }).error.message ?? DEFAULT_ERROR_MESSAGE));
     }
     
     private static handleError(error: Error) {

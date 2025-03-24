@@ -1,5 +1,3 @@
-import uuid
-
 from flask import Blueprint, request, jsonify, Response
 from prisma import Json
 from prisma.enums import Subject
@@ -9,19 +7,24 @@ from libs.ai.answer import answer_question
 from libs.database import database
 from models.message import Message, MessageSender
 from utils.api_exception import ApiException
+from utils.auth import authentication_required, get_authenticated_user
 from utils.body_parser import parse_request_body
 
 chat_blueprint = Blueprint("chats", __name__, url_prefix="/chats")
 
 @chat_blueprint.route("/", methods=["GET"])
+@authentication_required
 def get_all_chats() -> Response:
-    chats = database.chat.find_many()
-
+    user = get_authenticated_user()
+    chats = database.chat.find_many(where={"userId": user["id"]})
     return jsonify(chats)
 
 
 @chat_blueprint.route("/", methods=["POST"])
+@authentication_required
 def create_chat() -> Response:
+    user = get_authenticated_user()
+
     data = parse_request_body(request, [
         {"name": "subject", "key": "subject", "type": str, "required": True},
     ])
@@ -43,12 +46,14 @@ def create_chat() -> Response:
                 "content": "Hello! How can I help you today?"
             })
         ],
-        "userId": uuid.uuid4().hex
+        "userId": user["id"]
     })
 
     return jsonify(created_chat)
 
+
 @chat_blueprint.route("/temporary/ask-question", methods=["POST"])
+@authentication_required
 def ask_question_temporary() -> Response:
     data = parse_request_body(request, [
         {"name": "chat subject", "key": "subject", "type": str, "required": True},
@@ -73,6 +78,7 @@ def ask_question_temporary() -> Response:
 
 
 @chat_blueprint.route("/<chat_id>", methods=["GET"])
+@authentication_required
 def get_chat(chat_id: str) -> Response:
     chat = _find_chat(chat_id)
 
@@ -80,6 +86,7 @@ def get_chat(chat_id: str) -> Response:
 
 
 @chat_blueprint.route("/<chat_id>/ask-question", methods=["POST"])
+@authentication_required
 def ask_question(chat_id: str) -> Response:
     data = parse_request_body(request, [
         {"name": "question", "key": "question", "type": str, "required": True},
@@ -109,6 +116,7 @@ def ask_question(chat_id: str) -> Response:
 
 
 @chat_blueprint.route("/<chat_id>/clear", methods=["PATCH"])
+@authentication_required
 def clear_chat(chat_id: str) -> Response:
     chat = _find_chat(chat_id)
 
@@ -120,6 +128,7 @@ def clear_chat(chat_id: str) -> Response:
 
 
 @chat_blueprint.route("/<chat_id>", methods=["DELETE"])
+@authentication_required
 def delete_chat(chat_id: str) -> Response:
     chat = _find_chat(chat_id)
 
@@ -129,7 +138,12 @@ def delete_chat(chat_id: str) -> Response:
 
 
 def _find_chat(chat_id: str) -> Chat:
-    chat = database.chat.find_unique(where={"id": chat_id})
+    user = get_authenticated_user()
+
+    chat = database.chat.find_unique(where={
+        "id": chat_id,
+        "userId": user["id"]
+    })
 
     if chat is None:
         raise ApiException(code=404, message="Chat not found")

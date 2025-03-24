@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
     return (
         <html lang="en">
-            <body className={cn('w-screen h-screen bg-gray-100', appFont.className)}>
+            <body className={cn('relative w-screen h-screen overflow-hidden', appFont.className)}>
                 <TopLoader
                     color="#0b60d1"
                     shadow="0 0 10px #000000,0 0 5px #000000"

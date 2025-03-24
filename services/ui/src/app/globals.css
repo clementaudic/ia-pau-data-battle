@@ -8,3 +8,11 @@
     --color-tertiary-dark: #089246;
     --color-neutral: #8c8c8c;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+

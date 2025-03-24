@@ -15,7 +15,6 @@ export interface RequestConfig<P extends RequestConfigParams, D extends RequestC
 
 interface Entity {
     id: string;
-    createdAt: string;
 }
 
 export interface User extends Entity {
@@ -40,6 +39,7 @@ export enum Subject {
 }
 
 export interface Chat extends Entity {
+    createdAt: string;
     updatedAt: string;
     title: string;
     subject: Subject;
@@ -48,6 +48,7 @@ export interface Chat extends Entity {
 }
 
 export interface Quiz extends Entity {
+    createdAt: string;
     title: string;
     subject: Subject;
     userId: User['id'];
@@ -62,9 +63,9 @@ export type LoginData = z.infer<typeof loginSchema>;
 
 export const registerSchema = z.object({
     email: z.string({ message: "Email is required" }).email({ message: "Email is invalid" }),
-    firstName: z.string({ message: 'First name is required' }),
-    lastName: z.string({ message: 'Last name is required' }),
-    password: z.string({ message: 'Password is required' }),
+    firstName: z.string().min(1, 'First name is required'),
+    lastName: z.string().min(1,'Last name is required'),
+    password: z.string().min(1,'Password is required'),
 });
 
 export type RegisterData = z.infer<typeof registerSchema>;

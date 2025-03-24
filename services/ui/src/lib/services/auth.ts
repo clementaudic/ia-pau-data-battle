@@ -1,5 +1,5 @@
 import { ApiService } from '@lib/services/api';
-import type { LoginData, RegisterData } from '@lib/types';
+import type { LoginData, RegisterData, User } from '@lib/types';
 
 export class AuthService {
     public static async login(data: LoginData) {
@@ -12,5 +12,9 @@ export class AuthService {
     
     public static async logout() {
         return ApiService.post<null>('/auth/logout');
+    }
+    
+    public static async getUserProfile() {
+        return ApiService.get<User>('/auth/profile');
     }
 }

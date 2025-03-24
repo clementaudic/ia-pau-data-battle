@@ -1,6 +1,6 @@
 import { Subject } from '@lib/types';
 
-export const LOGIN_PAGE_ROUTE = '/auth/login' as const;
+export const GUEST_PAGE_ROUTE = '/guest' as const;
 
 export const DEFAULT_ERROR_MESSAGE = 'An error occurred. Please try again.' as const;
 

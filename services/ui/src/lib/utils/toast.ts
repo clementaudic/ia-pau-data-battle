@@ -14,7 +14,7 @@ export const toast = {
         baseToast.warning(message, { ...defaultOptions, duration: 4000, ...options }),
     error: (message: string, options?: ToastOptions) =>
         baseToast.error(
-            message.toLowerCase() === 'failed to fetch' ? 'Impossible de se connecter au serveur' : message,
+            message.toLowerCase() === 'failed to fetch' ? 'Server unreachable' : message,
             { ...defaultOptions, duration: 4000, ...options },
         ),
     message: (message: string, options?: ToastOptions) => baseToast.message(message, { ...defaultOptions, ...options }),
