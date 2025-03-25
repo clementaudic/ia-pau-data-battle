@@ -3,7 +3,7 @@
 import { type FunctionComponent, useEffect, useState } from 'react';
 
 const TEXT = 'Welcome to Patent Maestro!';
-const DELAY_MS = 65;
+const DELAY_MS = 50;
 
 export const LandingText: FunctionComponent = () => {
     const [currentText, setCurrentText] = useState('');

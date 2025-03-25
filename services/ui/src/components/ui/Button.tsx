@@ -7,11 +7,16 @@ export interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement
     children?: string;
 }
 
-export const Button: FunctionComponent<ButtonProps> = ({ isLoading, className, children, ...props }) => {
+export const Button: FunctionComponent<ButtonProps> = ({ isLoading, disabled, className, children, ...props }) => {
     return (
         <button
+            disabled={isLoading || disabled}
             {...props}
-            className={cn('flex justify-center items-center gap-2.5 h-10 px-5 rounded-md text-white bg-secondary hover:bg-primary transition-all', className)}
+            className={cn(
+                'flex justify-center items-center gap-2.5 h-10 px-5 rounded-md text-white bg-secondary hover:bg-primary transition-all',
+                disabled && 'cursor-not-allowed bg-secondary/75',
+                className
+            )}
         >
             {
                 isLoading && (

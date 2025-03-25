@@ -14,6 +14,6 @@ export const useMutation: SWRMutationHook = (...args) => {
     
     return {
         ...rest,
-        error: error instanceof Error ? error : new Error(DEFAULT_ERROR_MESSAGE),
+        error: error instanceof Error ? error : error ? new Error(DEFAULT_ERROR_MESSAGE) : null,
     };
 };

@@ -1,4 +1,4 @@
-import { ChatSection } from '@components/chats/ChatSection';
+import { TemporaryChatSection } from '@components/chats/TemporaryChatSection';
 import { MainLayout } from '@components/ui/MainLayout';
 import Link from 'next/link';
 import { Fragment } from 'react';
@@ -30,7 +30,7 @@ export default function GuestPage() {
                 </Fragment>
             )}
         >
-            <ChatSection/>
+            <TemporaryChatSection/>
         </MainLayout>
     );
 }

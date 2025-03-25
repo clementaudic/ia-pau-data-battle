@@ -64,12 +64,13 @@ def ask_question_temporary() -> Response:
     chat_history = data.get("chatHistory")
     question = data.get("question")
 
-    # answer_result = answer_question(
-    #     question,
-    #     subject,
-    #     [Message.from_dict(message) for message in chat_history]
-    # )
-    answer_result = _AnswerResult(True, Message(MessageSender.AI, "I'm sorry, I cannot answer your question at the moment."))
+    answer_result = answer_question(
+        question,
+        subject,
+        [Message.from_dict(message) for message in chat_history]
+    )
+
+    # answer_result = _AnswerResult(True, Message(MessageSender.AI, "I'm sorry, I cannot answer your question at the moment."))
 
     if not answer_result.is_successful or answer_result.answer is None:
         raise ApiException(code=502, message="Failed to answer question")

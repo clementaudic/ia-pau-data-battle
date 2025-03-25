@@ -5,11 +5,12 @@ import { Button } from '@components/ui/Button';
 import { type ChangeEventHandler, type FunctionComponent, useCallback, useState } from 'react';
 
 interface ChatInputProps {
+    isSendDisabled?: boolean;
     showSubjectSelector?: boolean;
     onTextSend?: (text: string) => (void | Promise<void>);
 }
 
-export const ChatInput: FunctionComponent<ChatInputProps> = ({ showSubjectSelector, onTextSend }) => {
+export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, showSubjectSelector, onTextSend }) => {
     const [text, setText] = useState('');
     
     const handleTextChange = useCallback<ChangeEventHandler<HTMLTextAreaElement>>((event) => {
@@ -38,6 +39,7 @@ export const ChatInput: FunctionComponent<ChatInputProps> = ({ showSubjectSelect
                     id="chat-send"
                     type="button"
                     name="send"
+                    disabled={isSendDisabled}
                     onClick={handleTextSend}
                 >
                     Send
