@@ -47,13 +47,6 @@ export interface Chat extends Entity {
     userId: User['id'];
 }
 
-export interface Quiz extends Entity {
-    createdAt: string;
-    title: string;
-    subject: Subject;
-    userId: User['id'];
-}
-
 export const loginSchema = z.object({
     email: z.string({ message: "Email is required" }).email({ message: "Email is invalid" }),
     password: z.string({ message: 'Password is required' }),
@@ -76,8 +69,19 @@ export const chatCreationSchema = z.object({
 
 export type ChatCreationData = z.infer<typeof chatCreationSchema>;
 
-export const quizCreationSchema = z.object({
-    subject: z.nativeEnum(Subject, { message: 'Subject is required' }),
+export const chatQuestionAskSchema = z.object({
+    question: z.string().min(1, 'Question is required'),
 });
 
-export type QuizCreationData = z.infer<typeof quizCreationSchema>;
+export type ChatQuestionAskData = z.infer<typeof chatQuestionAskSchema>;
+
+export const chatQuestionAskTemporarySchema = z.object({
+    subject: z.nativeEnum(Subject, { message: 'Subject is required' }),
+    question: z.string().min(1, 'Question is required'),
+    chatHistory: z.array(z.object({
+        sender: z.nativeEnum(MessageSender),
+        content: z.string(),
+    })),
+});
+
+export type ChatQuestionAskTemporaryData = z.infer<typeof chatQuestionAskTemporarySchema>;

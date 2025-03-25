@@ -10,7 +10,7 @@ export default function AuthLayout({ children }: PropsWithChildren) {
                 <div className="flex justify-between items-center gap-2.5">
                     <Logo/>
                     <Link
-                        href="/app"
+                        href="/chats"
                         className="block px-4 py-1 rounded-md outline outline-secondary text-secondary transition-all hover:bg-secondary hover:text-white"
                     >
                         <p>Go back</p>

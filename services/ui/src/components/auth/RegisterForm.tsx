@@ -58,7 +58,7 @@ export const RegisterForm: FunctionComponent = () => {
             
             toast.success('Your account have been created');
             
-            router.replace('/app');
+            router.replace('/chats');
         } catch (error) {
             console.error(error);
         }

@@ -1,7 +1,6 @@
 import { ChatCreationButton } from '@components/chats/ChatCreationButton';
 import { LandingText } from '@/components/landing/LandingText';
 import { SubjectSelector } from '@components/landing/SubjectSelector';
-import { QuizCreationButton } from '@components/quizzes/QuizCreationButton';
 import { SuspenseBoundary } from '@components/ui/SuspenseBoundary';
 import type { Subject } from '@lib/types';
 
@@ -28,7 +27,6 @@ export default async function AppPage({ searchParams }: AppPageProps) {
                 </div>
                 <div className="flex flex-wrap justify-center gap-10">
                     <ChatCreationButton subject={subject}/>
-                    <QuizCreationButton subject={subject}/>
                 </div>
             </div>
         </div>

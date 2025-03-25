@@ -13,9 +13,9 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ headerSuffix, c
                 <Logo/>
                 {headerSuffix}
             </header>
-            <main className="w-full flex-1">
+            <main className="flex flex-col items-center gap-5 w-full h-screen pt-20 pb-64 overflow-y-auto">
                 {children}
-                <div className="absolute bottom-2.5 right-2.5 flex items-center gap-2.5 text-neutral">
+                <div className="absolute bottom-2.5 right-5 flex items-center gap-2.5 text-neutral">
                     <p>Powered by AI</p>
                     <RiSparkling2Fill className="size-7"/>
                 </div>

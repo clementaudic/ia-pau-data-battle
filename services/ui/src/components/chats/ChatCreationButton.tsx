@@ -28,7 +28,7 @@ export const ChatCreationButton: FunctionComponent<ChatGeneratorProps> = ({ subj
         const createdChat = await trigger();
         
         if (createdChat) {
-            router.push(`/app/chats/${createdChat.id}`);
+            router.push(`/chats/${createdChat.id}`);
         }
     }, [router, isMutating, trigger]);
     

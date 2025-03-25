@@ -46,7 +46,7 @@ export const LoginForm: FunctionComponent = () => {
             
             toast.success('Login successful');
             
-            router.replace('/app');
+            router.replace('/chats');
         } catch (error) {
             console.error(error);
         }

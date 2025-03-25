@@ -11,7 +11,7 @@ export const Button: FunctionComponent<ButtonProps> = ({ isLoading, className, c
     return (
         <button
             {...props}
-            className={cn('flex justify-center items-center gap-2.5 h-10 rounded-md text-white bg-secondary hover:bg-primary transition-all', className)}
+            className={cn('flex justify-center items-center gap-2.5 h-10 px-5 rounded-md text-white bg-secondary hover:bg-primary transition-all', className)}
         >
             {
                 isLoading && (

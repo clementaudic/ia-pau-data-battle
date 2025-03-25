@@ -4,7 +4,7 @@ import type { FunctionComponent } from 'react';
 
 export const Logo: FunctionComponent = () => {
     return (
-        <Link href="/app">
+        <Link href="/chats">
             <Image
                 src="/logo.png"
                 alt="Patent Maestro's Logo"

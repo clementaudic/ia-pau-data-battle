@@ -3,7 +3,7 @@ from prisma import Json
 from prisma.enums import Subject
 from prisma.models import Chat
 
-from libs.ai.answer import answer_question
+from libs.ai.answer import answer_question, _AnswerResult
 from libs.database import database
 from models.message import Message, MessageSender
 from utils.api_exception import ApiException
@@ -53,23 +53,23 @@ def create_chat() -> Response:
 
 
 @chat_blueprint.route("/temporary/ask-question", methods=["POST"])
-@authentication_required
 def ask_question_temporary() -> Response:
     data = parse_request_body(request, [
         {"name": "chat subject", "key": "subject", "type": str, "required": True},
-        {"name": "chat history", "key": "chat_history", "type": list, "required": True},
+        {"name": "chat history", "key": "chatHistory", "type": list, "required": True},
         {"name": "question", "key": "question", "type": str, "required": True},
     ])
 
     subject = data.get("subject")
-    chat_history = data.get("chat_history")
+    chat_history = data.get("chatHistory")
     question = data.get("question")
 
-    answer_result = answer_question(
-        question,
-        subject,
-        [Message.from_dict(message) for message in chat_history]
-    )
+    # answer_result = answer_question(
+    #     question,
+    #     subject,
+    #     [Message.from_dict(message) for message in chat_history]
+    # )
+    answer_result = _AnswerResult(True, Message(MessageSender.AI, "I'm sorry, I cannot answer your question at the moment."))
 
     if not answer_result.is_successful or answer_result.answer is None:
         raise ApiException(code=502, message="Failed to answer question")
@@ -105,14 +105,22 @@ def ask_question(chat_id: str) -> Response:
     if not answer_result.is_successful:
         raise ApiException(code=502, message="Failed to answer question")
 
+    ai_answer = answer_result.answer.to_json()
+
     database.chat.update(
         where={"id": chat.id},
         data={
-            "messages": chat.messages + [answer_result.answer.to_json()]
+            "messages": chat.messages + [
+                Json({
+                    "sender": MessageSender.USER.value,
+                    "content": question
+                }),
+                ai_answer,
+            ]
         }
     )
 
-    return jsonify(answer_result.answer.to_json().data)
+    return jsonify(ai_answer.data)
 
 
 @chat_blueprint.route("/<chat_id>/clear", methods=["PATCH"])
