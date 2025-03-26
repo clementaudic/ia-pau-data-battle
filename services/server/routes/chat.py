@@ -17,7 +17,13 @@ chat_blueprint = Blueprint("chats", __name__, url_prefix="/chats")
 @authentication_required
 def get_all_chats() -> Response:
     user = get_authenticated_user()
-    chats = database.chat.find_many(where={"userId": user["id"]})
+    chats = database.chat.find_many(
+        where={"userId": user["id"]},
+        order=[
+            { "updatedAt": "desc" },
+            { "createdAt": "desc" }
+        ]
+    )
     return jsonify([serialize_chat(chat) for chat in chats])
 
 

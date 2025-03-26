@@ -2,18 +2,8 @@ import { ChatCreationButton } from '@components/chats/ChatCreationButton';
 import { LandingText } from '@/components/landing/LandingText';
 import { SubjectSelector } from '@components/landing/SubjectSelector';
 import { SuspenseBoundary } from '@components/ui/SuspenseBoundary';
-import { DEFAULT_SUBJECT } from '@lib/constants';
-import type { Subject } from '@lib/types';
 
-interface AppPageProps {
-    searchParams: Promise<{
-        subject: Subject;
-    }>;
-}
-
-export default async function AppPage({ searchParams }: AppPageProps) {
-    const { subject } = await searchParams;
-    
+export default async function AppPage() {
     return (
         <div className="flex flex-col items-center justify-center gap-20 size-full">
             <LandingText />
@@ -27,7 +17,9 @@ export default async function AppPage({ searchParams }: AppPageProps) {
                     </SuspenseBoundary>
                 </div>
                 <div className="flex flex-wrap justify-center gap-10">
-                    <ChatCreationButton subject={subject ?? DEFAULT_SUBJECT}/>
+                    <SuspenseBoundary fallback={null}>
+                        <ChatCreationButton/>
+                    </SuspenseBoundary>
                 </div>
             </div>
         </div>

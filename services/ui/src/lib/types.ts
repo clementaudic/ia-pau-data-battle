@@ -40,7 +40,6 @@ export enum Subject {
 
 export interface Chat extends Entity {
     createdAt: string;
-    updatedAt: string;
     title: string;
     subject: Subject;
     messages: Message[];

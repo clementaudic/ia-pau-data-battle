@@ -8,6 +8,7 @@ export default async function AppLayout({ children }: PropsWithChildren) {
     
     return (
         <MainLayout
+            showChatsDrawer
             headerSuffix={(
                 <div className="flex items-center gap-10">
                     <div className="flex items-center gap-2.5">

@@ -8,12 +8,13 @@ import { RiSendPlaneFill } from 'react-icons/ri';
 interface ChatInputProps {
     isSendDisabled?: boolean;
     showSubjectSelector?: boolean;
+    onSubjectChange?: VoidFunction;
     showClearButton?: boolean;
     onClear?: VoidFunction;
     onTextSend?: (text: string) => (void | Promise<void>);
 }
 
-export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, showSubjectSelector, showClearButton, onClear, onTextSend }) => {
+export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, showSubjectSelector, onSubjectChange, showClearButton, onClear, onTextSend }) => {
     const [text, setText] = useState('');
     
     const handleTextChange = useCallback<ChangeEventHandler<HTMLTextAreaElement>>((event) => {
@@ -50,7 +51,7 @@ export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, s
                 </Button>
                 {
                     showSubjectSelector && (
-                        <InlineSubjectSelector/>
+                        <InlineSubjectSelector onSubjectChange={onSubjectChange} />
                     )
                 }
                 {

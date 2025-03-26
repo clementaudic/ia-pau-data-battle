@@ -5,14 +5,19 @@ import { DEFAULT_SUBJECT, SUBJECT_PARAM_KEY } from '@lib/constants';
 import { Subject } from '@lib/types';
 import { type FunctionComponent, useCallback } from 'react';
 
-export const InlineSubjectSelector: FunctionComponent = () => {
+interface InlineSubjectSelectorProps {
+    onSubjectChange?: VoidFunction;
+}
+
+export const InlineSubjectSelector: FunctionComponent<InlineSubjectSelectorProps> = ({ onSubjectChange }) => {
     const { searchParams, changeSearchParam } = useSearchParamsChange<typeof SUBJECT_PARAM_KEY>();
     
     const subject = searchParams.get(SUBJECT_PARAM_KEY) as Subject ?? DEFAULT_SUBJECT;
     
     const changeSubject = useCallback((subject: Subject) => () => {
         changeSearchParam(SUBJECT_PARAM_KEY)(subject);
-    }, [changeSearchParam]);
+        onSubjectChange?.();
+    }, [onSubjectChange, changeSearchParam]);
     
     return (
         <div className="space-y-1">

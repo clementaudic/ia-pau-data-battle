@@ -8,6 +8,7 @@ SerializedChat = TypedDict(
     'SerializedChat',
     {
         "id": str,
+        "createdAt": str,
         "title": str,
         "subject": str,
         "messages": List[Json],
@@ -18,6 +19,7 @@ SerializedChat = TypedDict(
 def serialize_chat(chat: Chat) -> SerializedChat:
     return {
         "id": chat.id,
+        "createdAt": chat.createdAt.isoformat(),
         "title": chat.title,
         "subject": chat.subject,
         "messages": chat.messages,

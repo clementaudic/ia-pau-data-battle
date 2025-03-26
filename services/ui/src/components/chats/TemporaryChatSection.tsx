@@ -3,14 +3,14 @@
 import { ChatInput } from '@components/chats/ChatInput';
 import { MessagesSection } from '@components/chats/MessagesSection';
 import { useMutation } from '@hooks/useMutation';
-import { useSearchParamsChange } from '@hooks/useSearchParamsChange';
 import { DEFAULT_SUBJECT, SUBJECT_PARAM_KEY } from '@lib/constants';
 import { ChatService } from '@lib/services/chat';
 import { type ChatQuestionAskTemporaryData, type Message, MessageSender, Subject } from '@lib/types';
+import { useSearchParams } from 'next/navigation';
 import { Fragment, type FunctionComponent, useCallback, useEffect, useState } from 'react';
 
 export const TemporaryChatSection: FunctionComponent = () => {
-    const { searchParams } = useSearchParamsChange();
+    const searchParams = useSearchParams();
     const [messages, setMessages] = useState<Array<Message>>([]);
     
     const { trigger, isMutating, error } = useMutation(
@@ -22,6 +22,10 @@ export const TemporaryChatSection: FunctionComponent = () => {
     
     const addMessage = useCallback((message: Message) => {
         setMessages((prevMessages) => [...prevMessages, message]);
+    }, []);
+    
+    const clearMessages = useCallback(() => {
+        setMessages([]);
     }, []);
     
     const sendQuestion = useCallback(async (question: string) => {
@@ -80,6 +84,7 @@ export const TemporaryChatSection: FunctionComponent = () => {
             />
             <ChatInput
                 showSubjectSelector
+                onSubjectChange={clearMessages}
                 isSendDisabled={isMutating}
                 onTextSend={sendQuestion}
             />

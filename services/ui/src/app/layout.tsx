@@ -5,6 +5,7 @@ import TopLoader from 'nextjs-toploader';
 import { Toaster } from 'sonner';
 import type { PropsWithChildren } from 'react';
 import './globals.css';
+import { SWRConfig } from 'swr';
 
 const appFont = Poppins({
     subsets: ['latin'],
@@ -40,7 +41,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
                         },
                     }}
                 />
-                {children}
+                <SWRConfig value={{ shouldRetryOnError: false }}>
+                    {children}
+                </SWRConfig>
             </body>
         </html>
     );

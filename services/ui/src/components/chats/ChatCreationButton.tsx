@@ -1,22 +1,23 @@
 'use client';
 
 import { useMutation } from '@hooks/useMutation';
+import { DEFAULT_SUBJECT, SUBJECT_PARAM_KEY } from '@lib/constants';
 import { ChatService } from '@lib/services/chat';
 import type { Subject } from '@lib/types';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { type FunctionComponent, useCallback } from 'react';
 import { RiLoaderFill, RiQuestionAnswerFill } from 'react-icons/ri';
+import { mutate } from 'swr';
 
-interface ChatCreationButtonProps {
-    subject: Subject;
-}
-
-export const ChatCreationButton: FunctionComponent<ChatCreationButtonProps> = ({ subject }) => {
+export const ChatCreationButton: FunctionComponent = () => {
     const router = useRouter();
+    const searchParams = useSearchParams();
+    
+    const subject = searchParams.get(SUBJECT_PARAM_KEY) as Subject ?? DEFAULT_SUBJECT;
     
     const { trigger, isMutating } = useMutation(
-        ['create-new-chat', subject],
-        async ([, subject]) => {
+        'create-new-chat',
+        async (_, { arg: subject }: { arg: Subject }) => {
             return ChatService.createChat({ subject });
         }
     );
@@ -24,12 +25,14 @@ export const ChatCreationButton: FunctionComponent<ChatCreationButtonProps> = ({
     const createChat = useCallback(async () => {
         if (isMutating) return;
         
-        const createdChat = await trigger();
+        const createdChat = await trigger(subject);
         
         if (createdChat) {
+            await mutate('all-chats');
+            
             router.push(`/chats/${createdChat.id}`);
         }
-    }, [router, isMutating, trigger]);
+    }, [subject, router, isMutating, trigger]);
     
     return (
         <button
