@@ -4,7 +4,11 @@ import { AuthService } from '@lib/services/auth';
 import type { PropsWithChildren } from 'react';
 
 export default async function AppLayout({ children }: PropsWithChildren) {
-    const userProfile = (await AuthService.getUserProfile())!;
+    const userProfile = await AuthService.getUserProfile();
+    
+    if (!userProfile) {
+        return null;
+    }
     
     return (
         <MainLayout
