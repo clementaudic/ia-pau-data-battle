@@ -3,14 +3,17 @@
 import { InlineSubjectSelector } from '@components/chats/InlineSubjectSelector';
 import { Button } from '@components/ui/Button';
 import { type ChangeEventHandler, type FunctionComponent, useCallback, useState } from 'react';
+import { RiSendPlaneFill } from 'react-icons/ri';
 
 interface ChatInputProps {
     isSendDisabled?: boolean;
     showSubjectSelector?: boolean;
+    showClearButton?: boolean;
+    onClear?: VoidFunction;
     onTextSend?: (text: string) => (void | Promise<void>);
 }
 
-export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, showSubjectSelector, onTextSend }) => {
+export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, showSubjectSelector, showClearButton, onClear, onTextSend }) => {
     const [text, setText] = useState('');
     
     const handleTextChange = useCallback<ChangeEventHandler<HTMLTextAreaElement>>((event) => {
@@ -39,6 +42,7 @@ export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, s
                     id="chat-send"
                     type="button"
                     name="send"
+                    icon={RiSendPlaneFill}
                     disabled={isSendDisabled}
                     onClick={handleTextSend}
                 >
@@ -47,6 +51,19 @@ export const ChatInput: FunctionComponent<ChatInputProps> = ({ isSendDisabled, s
                 {
                     showSubjectSelector && (
                         <InlineSubjectSelector/>
+                    )
+                }
+                {
+                    showClearButton && (
+                        <button
+                            id="chat-clear"
+                            type="button"
+                            name="clear"
+                            onClick={onClear}
+                            className="text-sm font-light hover:font-medium underline underline-offset-2 cursor-pointer"
+                        >
+                            Clear chat
+                        </button>
                     )
                 }
             </div>

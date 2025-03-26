@@ -1,7 +1,7 @@
 from datetime import timedelta, datetime, timezone
 
 from functools import wraps
-from typing import Optional, TypedDict
+from typing import Optional
 
 from flask import Flask, Response
 from flask_jwt_extended import JWTManager, set_access_cookies, create_access_token, unset_jwt_cookies, get_jwt, \
@@ -11,17 +11,8 @@ from prisma.models import User
 from libs.config.env import EnvConfig
 from libs.database import database
 from utils.api_exception import ApiException
+from utils.serialize import serialize_user, SerializedUser
 
-
-AuthenticatedUser = TypedDict(
-    'AuthenticatedUser',
-    {
-        "id": str,
-        "email": str,
-        "firstName": str,
-        "lastName": str
-    }
-)
 
 def init_auth(app: Flask) -> None:
     app.config["JWT_SECRET_KEY"] = EnvConfig.SECRET_KEY
@@ -41,19 +32,14 @@ def init_auth(app: Flask) -> None:
 
 
     @jwt.user_lookup_loader
-    def user_lookup_callback(_jwt_header, jwt_data) -> Optional[AuthenticatedUser]:
+    def user_lookup_callback(_jwt_header, jwt_data) -> Optional[SerializedUser]:
         identity = jwt_data["sub"]
         user = database.user.find_unique(where={"id": identity})
-        return {
-            "id": user.id,
-            "email": user.email,
-            "firstName": user.firstName,
-            "lastName": user.lastName
-        }
+        return serialize_user(user)
 
 
     @app.after_request
-    def refresh_expiring_jwts(response):
+    def refresh_expiring_jwts(response) -> Response:
         try:
             exp_timestamp = get_jwt()["exp"]
             now = datetime.now(timezone.utc)
@@ -93,5 +79,5 @@ def authentication_required(fn):
     return decorator(fn)
 
 
-def get_authenticated_user() -> AuthenticatedUser:
+def get_authenticated_user() -> SerializedUser:
     return get_current_user()

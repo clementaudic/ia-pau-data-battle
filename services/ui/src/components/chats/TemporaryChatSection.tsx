@@ -25,6 +25,8 @@ export const TemporaryChatSection: FunctionComponent = () => {
     }, []);
     
     const sendQuestion = useCallback(async (question: string) => {
+        if (isMutating) return;
+        
         addMessage({
             content: question,
             sender: MessageSender.USER,

@@ -1,5 +1,6 @@
 from typing import List, Optional
 
+from flask import current_app as app
 from langchain_core.runnables import Runnable
 from prisma.enums import Subject
 
@@ -31,6 +32,7 @@ def answer_question(question: str, subject: Subject, chat_history: List[Message]
             qa_chain = epac_qa_chain
 
     if qa_chain is None:
+        app.logger.error(f"Failed to find QA chain for subject '{subject}'")
         return _AnswerResult(is_successful=False)
 
     answer = qa_chain.invoke({

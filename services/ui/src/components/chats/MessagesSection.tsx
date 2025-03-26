@@ -30,7 +30,7 @@ export const MessagesSection: FunctionComponent<MessagesSectionProps> = ({ messa
                         key={index}
                         ref={index === lastMessageIndex ? lastMessageRef : null}
                         className={cn(
-                            'w-fit min-w-3/5 max-w-5/6 p-5 rounded-2xl',
+                            'w-fit min-w-3/5 max-w-5/6 p-5 rounded-2xl whitespace-pre-wrap',
                             message.sender === MessageSender.USER
                                 ? 'ml-auto rounded-tr-none text-black bg-primary/10'
                                 : 'mr-auto rounded-tl-none text-white bg-primary/90',

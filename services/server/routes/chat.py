@@ -3,24 +3,25 @@ from prisma import Json
 from prisma.enums import Subject
 from prisma.models import Chat
 
-from libs.ai.answer import answer_question, _AnswerResult
+from libs.ai.answer import answer_question
 from libs.database import database
 from models.message import Message, MessageSender
 from utils.api_exception import ApiException
 from utils.auth import authentication_required, get_authenticated_user
 from utils.body_parser import parse_request_body
+from utils.serialize import serialize_chat
 
 chat_blueprint = Blueprint("chats", __name__, url_prefix="/chats")
 
-@chat_blueprint.route("/", methods=["GET"])
+@chat_blueprint.route("", methods=["GET"])
 @authentication_required
 def get_all_chats() -> Response:
     user = get_authenticated_user()
     chats = database.chat.find_many(where={"userId": user["id"]})
-    return jsonify(chats)
+    return jsonify([serialize_chat(chat) for chat in chats])
 
 
-@chat_blueprint.route("/", methods=["POST"])
+@chat_blueprint.route("", methods=["POST"])
 @authentication_required
 def create_chat() -> Response:
     user = get_authenticated_user()
@@ -49,7 +50,7 @@ def create_chat() -> Response:
         "userId": user["id"]
     })
 
-    return jsonify(created_chat)
+    return jsonify(serialize_chat(created_chat))
 
 
 @chat_blueprint.route("/temporary/ask-question", methods=["POST"])
@@ -65,12 +66,10 @@ def ask_question_temporary() -> Response:
     question = data.get("question")
 
     answer_result = answer_question(
-        question,
-        subject,
-        [Message.from_dict(message) for message in chat_history]
+        question=question,
+        subject=subject,
+        chat_history=[Message.from_dict(message) for message in chat_history]
     )
-
-    # answer_result = _AnswerResult(True, Message(MessageSender.AI, "I'm sorry, I cannot answer your question at the moment."))
 
     if not answer_result.is_successful or answer_result.answer is None:
         raise ApiException(code=502, message="Failed to answer question")
@@ -83,7 +82,7 @@ def ask_question_temporary() -> Response:
 def get_chat(chat_id: str) -> Response:
     chat = _find_chat(chat_id)
 
-    return jsonify(chat)
+    return jsonify(serialize_chat(chat))
 
 
 @chat_blueprint.route("/<chat_id>/ask-question", methods=["POST"])
@@ -98,9 +97,9 @@ def ask_question(chat_id: str) -> Response:
     chat = _find_chat(chat_id)
 
     answer_result = answer_question(
-        chat.subject,
-        question,
-        [Message.from_json(message) for message in chat.messages]
+        subject=chat.subject,
+        question=question,
+        chat_history=[Message.from_json(message) for message in chat.messages]
     )
 
     if not answer_result.is_successful:
@@ -111,7 +110,7 @@ def ask_question(chat_id: str) -> Response:
     database.chat.update(
         where={"id": chat.id},
         data={
-            "messages": chat.messages + [
+            "messages": [Json(message) for message in chat.messages] + [
                 Json({
                     "sender": MessageSender.USER.value,
                     "content": question
@@ -124,6 +123,26 @@ def ask_question(chat_id: str) -> Response:
     return jsonify(ai_answer.data)
 
 
+@chat_blueprint.route("/<chat_id>/generate-questions", methods=["POST"])
+@authentication_required
+def generate_questions(chat_id: str) -> Response:
+    chat = _find_chat(chat_id)
+
+    print(chat.messages)
+
+    updated_chat = database.chat.update(
+        where={"id": chat.id},
+        data={"messages": [Json(message) for message in chat.messages] + [
+            Json({
+                "sender": MessageSender.AI.value,
+                "content": "Here are some questions I generated for you:"
+            }),
+        ]}
+    )
+
+    return jsonify(serialize_chat(updated_chat))
+
+
 @chat_blueprint.route("/<chat_id>/clear", methods=["PATCH"])
 @authentication_required
 def clear_chat(chat_id: str) -> Response:
@@ -133,7 +152,7 @@ def clear_chat(chat_id: str) -> Response:
 
     updated_chat = _find_chat(chat_id)
 
-    return jsonify(updated_chat)
+    return jsonify(serialize_chat(updated_chat))
 
 
 @chat_blueprint.route("/<chat_id>", methods=["DELETE"])
@@ -143,7 +162,7 @@ def delete_chat(chat_id: str) -> Response:
 
     database.chat.delete(where={"id": chat.id})
 
-    return jsonify(chat)
+    return jsonify(serialize_chat(chat))
 
 
 def _find_chat(chat_id: str) -> Chat:

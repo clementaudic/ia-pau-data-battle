@@ -16,7 +16,8 @@ app = Flask(__name__)
 CORS(
     app=app,
     origins=["http://localhost:3000", "http://ui:3000"],
-    supports_credentials=True
+    supports_credentials=True,
+    methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
 )
 
 init_auth(app)

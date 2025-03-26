@@ -1,13 +1,15 @@
 import { cn } from '@utils/style';
 import type { ButtonHTMLAttributes, FunctionComponent } from 'react';
+import type { IconType } from 'react-icons';
 import { RiLoader2Fill } from 'react-icons/ri';
 
 export interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
     isLoading?: boolean;
     children?: string;
+    icon?: IconType
 }
 
-export const Button: FunctionComponent<ButtonProps> = ({ isLoading, disabled, className, children, ...props }) => {
+export const Button: FunctionComponent<ButtonProps> = ({ icon: Icon, isLoading, disabled, className, children, ...props }) => {
     return (
         <button
             disabled={isLoading || disabled}
@@ -19,8 +21,10 @@ export const Button: FunctionComponent<ButtonProps> = ({ isLoading, disabled, cl
             )}
         >
             {
-                isLoading && (
+                isLoading ? (
                     <RiLoader2Fill className="size-5 animate-spin" />
+                ) : Icon && (
+                    <Icon className="size-5" />
                 )
             }
             <p>

@@ -22,6 +22,10 @@ export class ChatService {
         return ApiService.post<Message>(`/chats/${id}/ask-question`, { data });
     }
     
+    public static async generateQuestions(id: Chat['id']) {
+        return ApiService.post<Message>(`/chats/${id}/generate-questions`);
+    }
+    
     public static async clearChat(id: Chat['id']) {
         return ApiService.patch<Chat>(`/chats/${id}/clear`);
     }
