@@ -4,6 +4,7 @@ from prisma.enums import Subject
 from prisma.models import Chat
 
 from libs.ai.answer import answer_question
+from libs.ai.question import generate_questions
 from libs.database import database
 from models.message import Message, MessageSender
 from utils.api_exception import ApiException
@@ -77,10 +78,10 @@ def ask_question_temporary() -> Response:
         chat_history=[Message.from_dict(message) for message in chat_history]
     )
 
-    if not answer_result.is_successful or answer_result.answer is None:
+    if not answer_result.is_successful or answer_result.result is None:
         raise ApiException(code=502, message="Failed to answer question")
 
-    return jsonify(answer_result.answer.to_json().data)
+    return jsonify(answer_result.result.to_json().data)
 
 
 @chat_blueprint.route("/<chat_id>", methods=["GET"])
@@ -109,9 +110,9 @@ def ask_question(chat_id: str) -> Response:
     )
 
     if not answer_result.is_successful:
-        raise ApiException(code=502, message="Failed to answer question")
+        raise ApiException(code=502, message="Failed to answer question, unknown subject")
 
-    ai_answer = answer_result.answer.to_json()
+    ai_answer = answer_result.result.to_json()
 
     database.chat.update(
         where={"id": chat.id},
@@ -131,18 +132,24 @@ def ask_question(chat_id: str) -> Response:
 
 @chat_blueprint.route("/<chat_id>/generate-questions", methods=["POST"])
 @authentication_required
-def generate_questions(chat_id: str) -> Response:
+def generate_questions_in_chat(chat_id: str) -> Response:
     chat = _find_chat(chat_id)
 
-    print(chat.messages)
+    questions_result = generate_questions(
+        subject=chat.subject,
+        chat_history=[Message.from_json(message) for message in chat.messages]
+    )
 
     updated_chat = database.chat.update(
         where={"id": chat.id},
         data={"messages": [Json(message) for message in chat.messages] + [
             Json({
                 "sender": MessageSender.AI.value,
-                "content": "Here are some questions I generated for you:"
-            }),
+                "content": questions_result.result.content
+            }) if questions_result.is_successful else Json({
+                "sender": MessageSender.AI.value,
+                "content": "Sorry, I couldn't generate questions for you at this time."
+            })
         ]}
     )
 

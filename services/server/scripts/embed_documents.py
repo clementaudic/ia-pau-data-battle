@@ -23,7 +23,7 @@ def embed_documents() -> None:
         documents = load_documents(directory)
 
         if len(documents) == 0:
-            print(f"No documents to embed from the '{directory}' directory.")
+            app.logger.info(f"No documents to embed from the '{directory}' directory.")
             continue
 
         app.logger.info(f"Adding from the '{directory}' directory to the store...")

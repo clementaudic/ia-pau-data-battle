@@ -69,7 +69,6 @@ def authentication_required(fn):
             try:
                 verify_jwt_in_request()
             except Exception as e:
-                print(e)
                 raise ApiException(code=401, message="You must be authenticated to perform this action")
 
             return func(*args, **kwargs)
