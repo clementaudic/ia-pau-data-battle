@@ -30,7 +30,7 @@ embed:
 ## 📍 4. Lancer le backend (Flask)
 run:
 	@echo "🚀 Démarrage du backend..."
-	flask --app app.py run --port 5000 --reload
+	FLASK_APP=app.py flask run --port 5000 --reload
 
 ## 📍 7. Nettoyer les fichiers inutiles
 clean:

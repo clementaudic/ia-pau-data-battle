@@ -4,7 +4,12 @@ services:
   ui:
     image: data-battle-ui
     container_name: data-battle-ui
-    build: ./services/ui
+    build:
+      context: ./services/ui
+      args:
+        API_URL: ${API_URL}
+        NEXT_PUBLIC_API_EXTERNAL_URL: ${NEXT_PUBLIC_API_EXTERNAL_URL}
+    hostname: ui
     ports:
       - '3000:3000'
     env_file: ./services/ui/.env.prod

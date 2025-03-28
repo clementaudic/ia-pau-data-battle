@@ -116,6 +116,7 @@ export const ChatSection: FunctionComponent<ChatSectionProps> = ({ chatId }) => 
             />
             <button
                 type="button"
+                disabled={isMutating || isLoading || isClearing || isGeneratingQuestions}
                 onClick={generateQuestions}
                 className="absolute bottom-52 left-1/2 -translate-x-1/2 flex justify-center items-center gap-2.5 px-5 py-2.5 shadow-md hover:shadow-lg rounded-xl text-white font-medium bg-tertiary cursor-pointer transition-all"
             >
