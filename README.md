@@ -1,5 +1,8 @@
 # Patent Maestro
 
+## Infrastructure
+![](docs/infrastructure_patent_maestro.png)
+
 ## Usage
 
 ### Prerequisites
